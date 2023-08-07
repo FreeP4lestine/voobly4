@@ -1,0 +1,725 @@
+QLabel,
+QDialog,
+QTreeWidget,
+QWidget {
+	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+COptions QPushButton,
+CGameSettings QPushButton {
+	min-height: 23px;
+	max-height: 23px;
+	min-width: 72px;
+}
+
+COptions QPushButton {
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent;
+	background-image: url(none);
+	border-image: url(%theme%/buttons/normal_options_button.png);
+	color: black;
+
+}
+
+COptions QPushButton:hover,
+COptions QPushButton:focus {
+	border-image: url(%theme%/buttons/hover_options_button.png);
+}
+
+COptions QPushButton:pressed {
+	border-image: url(%theme%/buttons/pressed_options_button.png);
+}
+
+QPushButton#fontColor {
+	min-height: 25px;
+	max-height: 25px;
+
+	border-image: url(none);
+	padding: 0px;
+	margin: 0px;
+}
+
+QPushButton#fontColor:hover {
+	border-image: url(none);
+}
+
+QPushButton#fontColor:pressed {
+	border-image: url(none);
+}
+
+QDialog#Options {
+	min-width: 610px;
+	max-width: 610px;
+	min-height: 505px;
+	max-height: 505px;
+
+	background-image: url(%theme%/lobby/s_bg.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+
+	background-color: #00375e;
+
+	color: white;
+}
+
+COptions QLabel {
+	background-color: transparent;
+	color: white;
+}
+
+QColorDialog QLabel {
+	background-color: transparent;
+	color: rgb(184, 20, 20);
+}
+
+QMessageBox QLabel {
+	color: black;
+}
+
+QListWidget::item:selected {
+	background: #D0D0D0;
+}
+
+QListWidget::item:selected:focus {
+	background: #3399FF;
+}
+
+
+QListWidget#listWidget {
+	background-color: black;
+
+	border: 1px solid black;
+}
+
+QListWidget#listWidget::item {
+	padding: 3px 0px;
+	border: none;
+	color: white;
+}
+
+QListWidget#listWidget::item:selected {
+	background: #01335b;
+	color: white;
+}
+
+COptions QStackedWidget#stackedWidget {
+	background-color: transparent;
+	padding: 3px;
+
+}
+
+COptions QGroupBox {
+	font-size: 14px;
+	color: white;
+	padding-top: 12px;
+	padding-left: 10px;
+	border: none;
+
+}
+
+COptions QGroupBox#groupBox_6,
+COptions QGroupBox#groupBox_7,
+COptions QGroupBox#groupBox_8,
+COptions QGroupBox#groupBox_9,
+COptions QGroupBox#groupBox_10,
+COptions QGroupBox#groupBox_11,
+COptions QGroupBox#groupBox_12,
+COptions QGroupBox#groupBox_17,
+COptions QGroupBox#groupBox_19,
+COptions QGroupBox#groupBox_20 {
+
+	font-size: 13px;
+	color: rgb(200, 200, 200);
+	border: none;
+}
+
+QMenu {
+	background: #D7C8A1;
+	background-repeat: repeat-y;
+	background-position: left;
+	margin: 0px;
+	border: 1px solid rgb(220, 220, 220);
+}
+
+QMenu::item {
+	border: 1px solid transparent;
+	padding: 3px 10px 3px 32px;
+	min-width: 100px;
+	min-height: 14px;
+	font-family: Calibri;
+}
+
+QMenu#statusMenu::item {
+	padding: 3px 10px 3px 10px;
+}
+
+QMenu::item:default {
+	font-weight: bold;
+}
+
+QMenu::item:disabled {
+	color: grey;
+}
+
+QMenu::item:selected {
+	background: #78bdfd;
+}
+
+QMenu::separator {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	height: 1px;
+	background-color: #000000;
+}
+
+QMenu::indicator {
+	width: 20px;
+	height: 20px;
+	margin-left: 1px;
+	margin-right: -21px;
+}
+
+QMenu::indicator:checked {
+	border-image: url(%theme%/buttons/normal_cb_border.png);
+	background-image: url(%theme%/buttons/normal_cb_check.png);
+	background-position: center center;
+	width: 20px;
+	height: 20px;
+	margin-left: 1px;
+}
+
+QMenu::icon {
+	min-width: 20px;
+	min-height: 20px;
+}
+
+QMenuBar {
+	min-height: 24px;
+	background-color: #EADBB2;
+	background-repeat: repeat-x;
+	border: none;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+CLobby QMenuBar {
+	border: none;
+}
+
+QMenuBar::item {
+	padding: 0px 5px;
+	margin: 2px 0px 1px 0px;
+	border: none;
+	color: black;
+}
+
+QMenuBar::item:selected {
+	margin: 2px 0px 1px 0px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+QToolBar {
+	min-height: 40px;
+
+	background-image: url(%theme%/lobby/tool_bg.png);
+	background-repeat: repeat-x;
+
+	background-color: transparent;
+
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+
+	image: url(%theme%/lobby/logo.png);
+
+}
+
+QToolBar::separator {
+	image: none;
+}
+
+QToolBar::handle {
+	padding: 0px 3px;
+	image: url(%theme%/lobby/tool_grab.png);
+	image-position: left;
+}
+
+QToolButton {
+	max-height: 40px;
+
+	margin: 0px;
+	padding-right: 2px;
+
+	text-align: middle;
+	border: none;
+
+	font-size: 12px;
+
+	color: rgb(220, 220, 220);
+
+
+}
+
+QToolButton:hover {
+	border-image: url(%theme%/lobby/tool_button_hover.png);
+
+	color: white;
+}
+
+QToolButton:pressed {
+	border-image: url(%theme%/lobby/tool_button_pressed.png);
+}
+
+QToolButton:disabled {
+	color: ;
+}
+
+QHeaderView {
+	min-height: 23px;
+
+	background-color: #01335b;
+
+
+	color: black;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+
+	padding: 0px;
+	margin: 0px;
+}
+
+QHeaderView::section {
+	background-color: transparent;
+
+	color: #e7f0f5;
+	border: none;
+
+	font-family: Arial, Tahoma, Calibri;
+	font-weight: bold;
+	font-size: 11px;
+
+	margin: 4px 0px 4px 3px;
+}
+
+QHeaderView::section:hover {
+	color: #a4b6c1;
+}
+
+QHeaderView::section:first {
+	margin-left: 3px;
+}
+
+CLobby QHeaderView {
+	border-top: none;
+}
+
+COptions QHeaderView,
+CGameInfo QHeaderView {
+	border: 1px solid black;
+}
+
+QTreeWidget {
+	background-color: transparent;
+
+	background-image: url(%theme%/lobby/darkglass_bg.png);
+
+	border: none;
+
+	color: white;
+}
+
+QTreeWidget::item {
+	margin: 0px;
+
+}
+
+QTreeWidget::branch {
+	background-color: transparent;
+
+}
+
+QTreeWidget::item:hover,
+QTreeWidget::item:selected {
+	border: none;
+
+	background-color: transparent;
+
+	background-image: url(%theme%/lobby/lightglass_bg.png);
+
+	color: white;
+}
+
+CGameInfo QTreeWidget {
+	/*min-height: 194px;*/
+}
+
+COptions QTreeWidget::item:selected,
+COptions QTreeWidget::branch:selected {
+	background-color: #c7e1f6;
+	color: black;
+}
+
+CGameRoom QLabel#header {
+	background-image: url(%theme%/game/default.png);
+	background-repeat: no-repeat;
+	background-position: left middle;
+	background-color: transparent;
+
+	border: none;
+
+	padding: 0px;
+
+	min-height: 30;
+	max-height: 30;
+}
+
+CGameRoom QLabel {
+	background-color: transparent;
+	color: white;
+	border: 1px solid black;
+	border-right: none;
+	padding-bottom: 3px;
+}
+
+CGameRoom QHeaderView {
+	border: 1px solid black;
+	border-right: none;
+
+}
+
+CGameRoom QTreeWidget {
+	background-image: url(none);
+	min-height: 195px;
+}
+
+
+#fontColor {
+	padding: 0px;
+	border-radius: 0px;
+
+	/*background-color: rgb(212,225,245);*/
+	/*border: 1px solid #8f9db4;*/
+
+	border: 1px solid black;
+}
+
+/* Player info popup */
+CUserTipLabel {
+
+	background-color: transparent;
+	border-image: url(%theme%/lobby/p_bg.png);
+
+	color: white;
+	opacity: 235;
+	padding: 6px;
+}
+
+#CUserTipLabelImage {
+	margin: 0px;
+	padding: 8px 8px;
+	border: none;
+
+	background-color: transparent;
+	background-image: url(%theme%/im/photoframe.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+/* Alert Popups */
+CAlert {
+	background-color: rgb(230, 230, 230);
+
+	border: 1px solid white;
+
+	color: white;
+
+	opacity: 220;
+
+	padding: 6px;
+}
+
+CAlert QLabel {
+	color: black;
+}
+
+
+/* popup menu header */
+#MenuCaption {
+	background-color: black;
+
+
+	border: 1px solid white;
+
+	color: rgb(245, 245, 245);
+	font-size: 12px;
+	font-weight: bold;
+
+	margin-right: 1px;
+	padding: 4px;
+}
+
+
+CEmoticons {
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	padding: 6px;
+}
+
+#EmoticonItemInner {
+	border: none;
+}
+
+#EmoticonItemOuter {
+	border: 1px solid rgb(230, 230, 230);
+}
+
+#EmoticonItemOuter:focus {
+	border: 2px solid black;
+}
+
+/* Customize combo and spin boxes. */
+QComboBox,
+QSpinBox {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #eeeeee, stop: 1 #ffffff);
+
+	border-top: 1px solid #354855;
+	border-left: 1px solid #354855;
+	border-bottom: 1px solid #50616d;
+	border-right: 1px solid #50616d;
+	border-radius: 3px;
+
+	color: black;
+	padding: 3px 0px 3px 3px;
+}
+
+QSpinBox {
+	padding: 3px 0px 3px 0px;
+}
+
+
+QComboBox:on,
+QComboBox:focus,
+QSpinBox:focus {
+	border: 1px solid #ffffff;
+}
+
+QComboBox::drop-down,
+QSpinBox::up-button,
+QSpinBox::down-button {
+	background-color: transparent;
+	border: none;
+}
+
+QSpinBox::up-button:hover,
+QSpinBox::down-button:hover {
+	margin: 1px 1px 0px 0px;
+}
+
+QSpinBox::up-button:pressed,
+QSpinBox::down-button:pressed {
+	margin: 0px 0px 0px 0px;
+}
+
+QSpinBox:disabled {
+	color: rgb(100, 100, 100);
+}
+
+QComboBox QAbstractItemView {
+
+	background-color: rgb(240, 240, 240);
+
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+
+	padding: 2px;
+}
+
+/* Customize check boxes. */
+QCheckBox {
+	color: white;
+	qproperty-alignment: AlignCenter;
+}
+
+QCheckBox::indicator {
+	width: 48px;
+	height: 48px;
+}
+
+QCheckBox::indicator:unchecked {
+	image: url(%theme%/buttons/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:hover {
+	image: url(%theme%/buttons/checkbox_unchecked_hover.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+	image: url(%theme%/buttons/checkbox_unchecked_pressed.png);
+}
+
+QCheckBox::indicator:checked {
+	image: url(%theme%/buttons/checkbox_checked.png);
+}
+
+QCheckBox::indicator:checked:hover {
+	image: url(%theme%/buttons/checkbox_checked_hover.png);
+}
+
+QCheckBox::indicator:checked:pressed {
+	image: url(%theme%/buttons/checkbox_checked_pressed.png);
+}
+
+/* Customize arrows. */
+
+*::up-arrow {
+	image: url(%theme%/arrows/up_arrow.png);
+	image-position: left;
+	width: 10px;
+	height: 10px;
+}
+
+*::up-arrow:disabled,
+*::up-arrow:off {
+	image: url(%theme%/arrows/up_arrow_disabled.png);
+	image-position: left;
+	width: 10px;
+	height: 10px;
+}
+
+*::down-arrow {
+	image: url(%theme%/arrows/down_arrow.png);
+	image-position: left;
+	width: 10px;
+	height: 10px;
+}
+
+*::down-arrow:disabled,
+*::down-arrow:off {
+	image: url(%theme%/arrows/down_arrow_disabled.png);
+	image-position: left;
+	width: 10px;
+	height: 10px;
+}
+
+/* Black Arrows */
+COptions *::up-arrow,
+CGameSettings *::up-arrow {
+	image: url(%theme%/arrows/up_arrow_black.png);
+	image-position: left;
+	width: 10px;
+	height: 10px;
+}
+
+COptions *::down-arrow,
+CGameSettings *::down-arrow {
+	image: url(%theme%/arrows/down_arrow_black.png);
+	image-position: left;
+	width: 10px;
+	height: 10px;
+}
+
+/* Vertical Scrollbar */
+
+QScrollBar:vertical {
+	background-image: url(%theme%/lobby/scrollbar_background.png);
+	border-left: 1px solid #E4B479;
+	border-bottom: 1px solid #E4B479;
+	border-right: 1px solid #6F4F2E;
+	border-top: 1px solid #6F4F2E;
+	width: 20px;
+	margin: 20px 0px 20px 0px;
+}
+
+QScrollBar::handle:vertical {
+	background-image: url(%theme%/lobby/scrollbar.png);
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
+	border-right: 2px solid #E4B479;
+	border-top: 2px solid #E4B479;
+}
+
+QScrollBar::handle:vertical:pressed {
+	border-right: 1px solid #6F4F2E;
+	border-top: 1px solid #6F4F2E;
+	border-left: 1px solid #E4B479;
+	border-bottom: 1px solid #E4B479;
+}
+
+QScrollBar::handle:vertical:hover {
+	background-color: #d6a262;
+}
+
+QScrollBar::handle:vertical:pressed {
+	background-color: #f0b66f;
+}
+
+
+QScrollBar::sub-line:vertical {
+	width: 20px;
+	height: 20px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+	background-image: url(%theme%/lobby/up_arrow.png);
+}
+
+QScrollBar::add-line:vertical {
+	width: 20px;
+	height: 20px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+	background-image: url(%theme%/lobby/down_arrow.png);
+}
+
+QScrollBar::up-arrow:vertical {
+	width: 20px;
+	height: 20px;
+	image: url(%theme%/lobby/up_arrow.png);
+}
+
+QScrollBar::up-arrow:vertical:pressed {
+	image: url(%theme%/lobby/up_arrow_click.png);
+}
+
+QScrollBar::down-arrow:vertical {
+	width: 20px;
+	height: 20px;
+	image: url(%theme%/lobby/down_arrow.png);
+}
+
+QScrollBar::down-arrow:vertical:pressed {
+	image: url(%theme%/lobby/down_arrow_click.png);
+}
+
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+/* Horizontal Scrollbar */
+QScrollBar:horizontal {
+	max-height: 0px;
+}
+
+CStreamOverlay {
+	background-color: rgb(230, 230, 230);
+	border: 1px solid white;
+	color: white;
+	opacity: 220;
+	padding: 1px;
+}
+
+CSplash QPlainTextEdit {
+	color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid #af861e;
+	margin-left: auto;
+	margin-bottom: 10px;
+	width: 200px;
+}

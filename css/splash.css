@@ -1,0 +1,199 @@
+/* Splash Screen */
+CSplash {
+	background-image: url(%theme%/voobly.png);
+	background-color: #EADBB2;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+CSplash QPushButton {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100px;
+	height: 25px;
+	color: black;
+	background: url(%theme%/normal.png);
+	font-family: Tahoma;
+	font-size: 12px;
+	border-image: url(%theme%/border.png);
+	font-weight: bold;
+}
+
+CSplash QPushButton:hover {
+	color: white;
+}
+
+CSplash QPushButton:pressed {
+	border-image: url(%theme%/clicked.png);
+}
+
+CSplash QPushButton:disabled {
+	background-color: #888888;
+	border: 1px solid black;
+	border-image: none;
+}
+
+CSplash #header {
+	min-height: 40px;
+	background-color: #D7C8A1;
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 22px;
+	qproperty-alignment: AlignCenter;
+}
+
+CSplash #status1 {
+	font-family: Arial;
+	font-size: 14px;
+	padding: 6px;
+	/*border: 1px solid black;*/
+}
+
+CSplash #status2 {
+	font-family: Arial;
+	font-size: 14px;
+	padding: 6px;
+}
+
+CSplash #animation1 {
+	max-width: 32px;
+	max-height: 32px;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+
+CSplash #pushReconnect {
+	margin-top: 3px;
+	margin-right: 2px;
+	padding: 3px;
+}
+
+CSplash #pushCancel2 {
+	margin-top: 3px;
+	margin-left: 2px;
+	padding: 3px;
+}
+
+CSplash #pushCancel {
+	margin-top: 4px;
+	padding: 3px;
+}
+
+
+CSplash #animation2 {
+	max-height: 32px;
+	margin-bottom: 5px;
+}
+
+CSplash #footer {
+	background-color: #D7C8A1;
+	font-weight: bold;
+	font-family: Calibri;
+	font-size: 11px;
+	min-height: 30;
+	qproperty-alignment: AlignCenter;
+}
+
+
+CSplash #usernameGroup {
+	border: none;
+	qproperty-alignment: AlignCenter;
+}
+
+CSplash #saveGroup {
+	margin-top: 10px;
+	border: none;
+	font-size: 12px;
+}
+
+CSplash #autologin {
+	margin-top: 4px;
+}
+
+CSplash #pushSignIn {
+	margin-top: 10px;
+}
+
+CSplash #registerGroup {
+	border: none;
+	min-width: 220px;
+	min-height: 50px;
+}
+
+CSplash #registerGroup QLabel {
+	qproperty-alignment: AlignCenter;
+}
+
+CSplash QCheckBox {
+	color: black;
+	font-size: 12px;
+	font-family: Calibri;
+	font-weight: bold;
+}
+
+
+CSplash QLineEdit {
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 16px;
+	font-family: Calibri;
+	font-weight: bold;
+	border: 1px solid #000000;
+	margin-bottom: 10px;
+	qproperty-alignment: AlignCenter;
+	width: 250px;
+	height: 25px;
+}
+
+CSplash QLineEdit:hover {
+	border: 1px solid #0084ff;
+}
+
+CSplash QLineEdit:focus {
+	border: 2px solid #0084ff;
+}
+
+CSplash #usernameGroup QLabel {
+	padding: 3px 3px 3px 3px;
+	font-weight: bold;
+}
+
+QCheckBox::indicator {
+	width: 20px;
+	height: 20px;
+}
+
+QCheckBox::indicator:unchecked {
+	image: url(%theme%/buttons/normal_cb.png);
+	border-image: url(%theme%/buttons/normal_cb_border.png);
+}
+
+QCheckBox::indicator:unchecked:hover {
+	border-image: url(%theme%/buttons/normal_cb_border_hover.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+	border-image: url(%theme%/buttons/clicked_border.png);
+}
+
+QCheckBox::indicator:checked {
+	image: url(%theme%/buttons/normal_cb_check.png);
+	border-image: url(%theme%/buttons/normal_cb_border.png);
+}
+
+QCheckBox::indicator:checked:hover {
+	border-image: url(%theme%/buttons/normal_cb_border_hover.png);
+}
+
+QCheckBox::indicator:checked:pressed {
+	border-image: url(%theme%/buttons/clicked_border.png);
+}
+
+CSplash QLabel {
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 13px;
+	qproperty-alignment: AlignCenter;
+}
