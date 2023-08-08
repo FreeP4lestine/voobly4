@@ -139,7 +139,7 @@ QMenu {
 	background-repeat: repeat-y;
 	background-position: left;
 	margin: 0px;
-	border: 1px solid rgb(220, 220, 220);
+	border: 1px solid rgb(0, 0, 0);
 }
 
 QMenu::item {
@@ -627,6 +627,7 @@ CGameSettings *::down-arrow {
 /* Vertical Scrollbar */
 
 QScrollBar:vertical {
+	background: transparent;
 	background-image: url(%theme%/lobby/scrollbar_background.png);
 	border-left: 1px solid #E4B479;
 	border-bottom: 1px solid #E4B479;
