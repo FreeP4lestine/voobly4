@@ -12,12 +12,15 @@ CSplash QPushButton {
 	padding-left: 10px;
 	padding-right: 10px;
 	width: 100px;
-	height: 25px;
+	height: 20px;
 	color: black;
-	background: url(%theme%/normal.png);
-	font-family: Tahoma;
-	font-size: 12px;
-	border-image: url(%theme%/border.png);
+	background: #B88851;
+	font-family: Calibri;
+	font-size: 16px;
+	border-top: 2px solid #E4B479;
+	border-right: 2px solid #E4B479;
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
 	font-weight: bold;
 }
 
@@ -26,7 +29,10 @@ CSplash QPushButton:hover {
 }
 
 CSplash QPushButton:pressed {
-	border-image: url(%theme%/clicked.png);
+	border-left: 2px solid #E4B479;
+	border-bottom: 2px solid #E4B479;
+	border-top: 2px solid #6F4F2E;
+	border-right: 2px solid #6F4F2E;
 }
 
 CSplash QPushButton:disabled {
