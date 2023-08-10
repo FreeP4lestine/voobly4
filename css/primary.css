@@ -35,7 +35,7 @@ COptions QPushButton:pressed {
 	border-right: 2px solid #6F4F2E;
 }
 
-QPushButton#fontColor {
+#fontColor {
 	min-height: 25px;
 	max-height: 25px;
 	padding: 0px;
@@ -47,11 +47,11 @@ QPushButton#fontColor {
 	border-bottom: 2px solid #6F4F2E;
 }
 
-QPushButton#fontColor:hover {
+#fontColor:hover {
 	color: white;
 }
 
-QPushButton#fontColor:pressed {
+#fontColor:pressed {
 	border-left: 2px solid #E4B479;
 	border-bottom: 2px solid #E4B479;
 	border-top: 2px solid #6F4F2E;
@@ -64,15 +64,15 @@ QDialog#Options {
 	min-height: 505px;
 	max-height: 505px;
 	background-image: url(%theme%/voobly.png);
-	background-color: #EADBB2;
+	background-color: rgb(234, 219, 178);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 COptions QLabel {
 	font-family: Calibri;
-	font-weight: bold;
 	background-color: transparent;
+	padding-bottom: 5px;
 }
 
 QColorDialog QLabel {
@@ -80,47 +80,98 @@ QColorDialog QLabel {
 	color: rgb(184, 20, 20);
 }
 
-QMessageBox QLabel {
-	color: black;
+COptions QLineEdit {
+	min-height: 15px;
+	font-family: Calibri;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	border-top: 2px solid #895932;
+	border-right: 2px solid #895932;
+	border-left: 2px solid #E4B479;
+	border-bottom: 2px solid #E4B479;
+}
+
+COptions QLineEdit:disabled {
+	background-color: rgb(209, 209, 209);
+	border: none;
+}
+
+COptions QTextEdit {
+	background: transparent;
+	font-family: Calibri;
+	font-weight: bold;
+	border-top: 2px solid #895932;
+	border-right: 2px solid #895932;
+	border-left: 2px solid #E4B479;
+	border-bottom: 2px solid #E4B479;
+}
+
+COptions QComboBox {
+	min-height: 15;
+	font-family: Calibri;
+	font-weight: bold;
+	background: #B88851;
+	border-top: 2px solid #E4B479;
+	border-right: 2px solid #E4B479;
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
+	border-radius: 0%;
+}
+
+COptions QComboBox QAbstractItemView {
+	background: #B88851;
+}
+
+COptions QComboBox:hover {
+	color: white;
+}
+
+COptions QComboBox:selected {
+	border-top: 2px solid #E4B479;
+	border-right: 2px solid #E4B479;
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
+}
+
+/*QMessageBox QLabel {
+	
+}*/
+
+QListWidget::item:hover {
+	background: #78bdfd;
 }
 
 QListWidget::item:selected {
-	background: #D0D0D0;
+	background: #B88851;
+	border-top: 2px solid #E4B479;
+	border-right: 2px solid #E4B479;
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
 }
 
-QListWidget::item:selected:focus {
-	background: #3399FF;
+QListWidget {
+	background-color: rgb(215, 200, 161);
+	border: none;
+	border-bottom: 8px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(0, 0, 0), stop: 0.5 rgb(234, 219, 178));
+	border-right: 8px solid qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 rgb(0, 0, 0), stop: 0.5 rgb(234, 219, 178));
 }
 
-
-QListWidget#listWidget {
-	background-color: #D7C8A1;
-	border: 1px solid #000000;
-}
-
-QListWidget#listWidget::item {
-	qproperty-alignment: AlignCenter;
+QListWidget::item {
 	color: #000000;
-}
-
-QListWidget#listWidget::item:selected {
-	background: #01335b;
-	color: white;
+	padding: 5px 0px 5px 0px;
 }
 
 COptions QStackedWidget#stackedWidget {
 	background-color: transparent;
-	padding: 3px;
-
 }
 
 COptions QGroupBox {
-	font-size: 14px;
-	color: white;
+	font-family: Calibri;
+	font-size: 18px;
+	font-weight: bold;
 	padding-top: 12px;
 	padding-left: 10px;
 	border: none;
-
 }
 
 COptions QGroupBox#groupBox_6,
@@ -133,9 +184,10 @@ COptions QGroupBox#groupBox_12,
 COptions QGroupBox#groupBox_17,
 COptions QGroupBox#groupBox_19,
 COptions QGroupBox#groupBox_20 {
-
-	font-size: 13px;
-	color: rgb(200, 200, 200);
+	font-family: Calibri;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: underline;
 	border: none;
 }
 
@@ -548,37 +600,37 @@ QComboBox QAbstractItemView {
 /* Customize check boxes. */
 QCheckBox {
 	font-family: Calibri;
-	font-weight: bold;
-	qproperty-alignment: AlignCenter;
 }
 
 QCheckBox::indicator {
-	width: 48px;
-	height: 48px;
+	width: 20px;
+	height: 20px;
 }
 
 QCheckBox::indicator:unchecked {
-	image: url(%theme%/buttons/checkbox_unchecked.png);
+	image: url(%theme%/buttons/normal_cb.png);
+	border-image: url(%theme%/buttons/normal_cb_border.png);
 }
 
 QCheckBox::indicator:unchecked:hover {
-	image: url(%theme%/buttons/checkbox_unchecked_hover.png);
+	border-image: url(%theme%/buttons/normal_cb_border_hover.png);
 }
 
 QCheckBox::indicator:unchecked:pressed {
-	image: url(%theme%/buttons/checkbox_unchecked_pressed.png);
+	border-image: url(%theme%/buttons/clicked_border.png);
 }
 
 QCheckBox::indicator:checked {
-	image: url(%theme%/buttons/checkbox_checked.png);
+	image: url(%theme%/buttons/normal_cb_check.png);
+	border-image: url(%theme%/buttons/normal_cb_border.png);
 }
 
 QCheckBox::indicator:checked:hover {
-	image: url(%theme%/buttons/checkbox_checked_hover.png);
+	border-image: url(%theme%/buttons/normal_cb_border_hover.png);
 }
 
 QCheckBox::indicator:checked:pressed {
-	image: url(%theme%/buttons/checkbox_checked_pressed.png);
+	border-image: url(%theme%/buttons/clicked_border.png);
 }
 
 /* Customize arrows. */
