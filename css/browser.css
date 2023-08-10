@@ -1,12 +1,10 @@
-CGameBrowser
-{
+CGameBrowser {
 	background-image: url(%theme%/tableview/bg.png);
 	background-color: #0269b8;
 	background-repeat: no-repeat;
 }
 
-QFrame#browserGroup
-{
+QFrame#browserGroup {
 	background-image: url(%theme%/internet/mediumglass_bg.png);
 	background-color: transparent;
 
@@ -17,8 +15,7 @@ QFrame#browserGroup
 }
 
 
-QFrame#directionGroup
-{
+QFrame#directionGroup {
 	min-height: 40px;
 	max-height: 40px;
 
@@ -32,16 +29,15 @@ QFrame#directionGroup
 
 	padding-right: 5px;
 }
-QPushButton
-{
+
+QPushButton {
 	padding: 0px;
 	margin: 0px;
 	border-radius: 0px;
 }
 
 QPushButton#pushBack,
-QPushButton#pushForward
-{
+QPushButton#pushForward {
 	min-height: 30px;
 	min-width: 30px;
 
@@ -51,72 +47,66 @@ QPushButton#pushForward
 	border: none;
 }
 
-QPushButton#pushBack
-{
+QPushButton#pushBack {
 	image: url(%theme%/internet/back.png);
 
 	padding-left: 2px;
 }
-QPushButton#pushBack:hover
-{
+
+QPushButton#pushBack:hover {
 	image: url(%theme%/internet/back_hover.png);
 }
-QPushButton#pushBack:disabled
-{
+
+QPushButton#pushBack:disabled {
 	image: url(%theme%/internet/back_disabled.png);
 }
 
 
-QPushButton#pushForward
-{
+QPushButton#pushForward {
 	image: url(%theme%/internet/forward.png);
 
 	padding-right: 2px;
 }
-QPushButton#pushForward:hover
-{
+
+QPushButton#pushForward:hover {
 	image: url(%theme%/internet/forward_hover.png);
 }
-QPushButton#pushForward:disabled
-{
+
+QPushButton#pushForward:disabled {
 	image: url(%theme%/internet/forward_disabled.png);
 }
 
 
 
-QPushButton#pushStop
-{
+QPushButton#pushStop {
 	image: url(%theme%/internet/stop.png);
 }
-QPushButton#pushStop:hover
-{
+
+QPushButton#pushStop:hover {
 	image: url(%theme%/internet/stop_hover.png);
 }
 
-QPushButton#pushHome
-{
+QPushButton#pushHome {
 	image: url(%theme%/internet/home.png);
 }
-QPushButton#pushHome:hover
-{
+
+QPushButton#pushHome:hover {
 	image: url(%theme%/internet/home_hover.png);
 }
 
-QPushButton#pushRefresh
-{
+QPushButton#pushRefresh {
 	image: url(%theme%/internet/refresh.png);
 }
-QPushButton#pushRefresh:hover
-{
+
+QPushButton#pushRefresh:hover {
 	image: url(%theme%/internet/refresh_hover.png);
 }
 
-QPushButton#pushGo
-{
+QPushButton#pushGo {
 	image: url(%theme%/internet/go.png);
 }
-QPushButton#pushGo:hover
-{
+
+QPushButton#pushGo:hover {
 	image: url(%theme%/internet/go_hover.png);
 }
 
@@ -124,54 +114,48 @@ QPushButton#pushStop,
 QPushButton#pushHome,
 QPushButton#pushRefresh,
 QPushButton#pushGo,
-QLineEdit#addressEdit
-{
+QLineEdit#addressEdit {
 	min-height: 22px;
 
 	background-color: transparent;
 
 	border-image: url(none);
 	border: none;
-	border-right: 1px solid rgb(170,170,170);
+	border-right: 1px solid rgb(170, 170, 170);
 }
 
 QPushButton#pushStop,
 QPushButton#pushHome,
 QPushButton#pushRefresh,
-QPushButton#pushGo
-{
+QPushButton#pushGo {
 	min-width: 26px;
 }
 
-QPushButton#pushGo
-{
+QPushButton#pushGo {
 	border-right: none;
 }
 
-QFrame#nondirectionGroup1
-{
+QFrame#nondirectionGroup1 {
 	max-height: 26px;
 
-	border: 1px solid rgb(145,145,145);
+	border: 1px solid rgb(145, 145, 145);
 	border-radius: 3px;
 }
 
-QFrame#nondirectionGroup2
-{
+QFrame#nondirectionGroup2 {
 	max-height: 24px;
 	min-height: 24px;
 
-	border: 1px solid rgb(50,50,50);
+	border: 1px solid rgb(50, 50, 50);
 	border-radius: 3px;
 }
 
-QFrame#nondirectionGroup2:hover
-{
+QFrame#nondirectionGroup2:hover {
 	background-image: url(%theme%/internet/textedit_bg_hover.png);
 }
 
-QFrame#controlGroup, QFrame#addressGroup
-{
+QFrame#controlGroup,
+QFrame#addressGroup {
 	max-height: 22px;
 	min-height: 22px;
 
@@ -179,18 +163,16 @@ QFrame#controlGroup, QFrame#addressGroup
 	background-image: url(%theme%/internet/textedit_bg.png);
 }
 
-QFrame#controlGroup
-{
+QFrame#controlGroup {
 	border-right: none;
 }
-QFrame#addressGroup
-{
+
+QFrame#addressGroup {
 	border-left: none;
 }
 
 
-QFrame#statusFrame
-{
+QFrame#statusFrame {
 	min-height: 15px;
 	max-height: 15px;
 
@@ -202,13 +184,11 @@ QFrame#statusFrame
 	padding: 1px 1px 3px 3px;
 }
 
-QLabel#statusText
-{
-	color: rgb(200,200,200);
+QLabel#statusText {
+	color: rgb(200, 200, 200);
 }
 
-QProgressBar#statusBar
-{
+QProgressBar#statusBar {
 	min-height: 15px;
 	max-height: 15px;
 
