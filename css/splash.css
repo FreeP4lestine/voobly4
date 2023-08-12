@@ -129,7 +129,7 @@ CSplash #registerGroup {
 	min-height: 50px;
 }
 
-CSplash #registerGroup QLabel {
+#registerGroup QLabel {
 	qproperty-alignment: AlignCenter;
 }
 
@@ -139,7 +139,6 @@ CSplash QCheckBox {
 	font-family: Calibri;
 	font-weight: bold;
 }
-
 
 CSplash QLineEdit {
 	background-color: rgba(255, 255, 255, 0.7);

@@ -5,6 +5,13 @@ QWidget {
 	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+QTreeView {
+	background-image: url(%theme%/voobly.png);
+	background-color: #EADBB2;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 COptions QPushButton,
 CGameSettings QPushButton {
 	min-height: 23px;
@@ -138,7 +145,7 @@ COptions QComboBox:selected {
 }*/
 
 QListWidget::item:hover {
-	background: #78bdfd;
+	background: #e0a663;
 }
 
 QListWidget::item:selected {
@@ -200,7 +207,6 @@ QMenu {
 }
 
 QMenu::item {
-	border: 1px solid transparent;
 	padding: 3px 10px 3px 32px;
 	min-width: 100px;
 	min-height: 14px;
@@ -220,7 +226,7 @@ QMenu::item:disabled {
 }
 
 QMenu::item:selected {
-	background: #78bdfd;
+	background: #e0a663;
 }
 
 QMenu::separator {
@@ -335,35 +341,32 @@ QToolButton:disabled {
 	color: ;
 }
 
+COptions QTreeView {
+	background: rgba(111, 78, 46, 0.5);
+	color: #000000;
+}
+
 QHeaderView {
-	min-height: 23px;
-
-	background-color: #01335b;
-
-
-	color: black;
-	border-top: 1px solid #000000;
-	border-bottom: 1px solid #000000;
-
-	padding: 0px;
-	margin: 0px;
+	min-height: 25px;
+	background-color: #6f4e2e;
+	border: none;
 }
 
 QHeaderView::section {
 	background-color: transparent;
-
-	color: #e7f0f5;
-	border: none;
-
-	font-family: Arial, Tahoma, Calibri;
+	color: #ffffff;
+	font-family: Calibri;
 	font-weight: bold;
-	font-size: 11px;
-
-	margin: 4px 0px 4px 3px;
+	font-size: 13px;
+	text-decoration: underline;
 }
 
 QHeaderView::section:hover {
-	color: #a4b6c1;
+	background-color: rgba(148, 105, 63, 0.5);
+}
+
+QHeaderView:hover {
+	background-color: rgba(136, 97, 58, 0.5);
 }
 
 QHeaderView::section:first {
@@ -380,34 +383,23 @@ CGameInfo QHeaderView {
 }
 
 QTreeWidget {
-	background-color: transparent;
-
-	background-image: url(%theme%/lobby/darkglass_bg.png);
-
-	border: none;
-
-	color: white;
+	background: rgba(148, 105, 63, 0.521);
 }
 
-QTreeWidget::item {
-	margin: 0px;
-
+COptions QTreeWidget::branch {
+	height: 30px;
+	background: rgba(148, 105, 63, 0.521);
 }
 
-QTreeWidget::branch {
-	background-color: transparent;
-
+COptions QTreeWidget::item {
+	height: 25px;
+	font-family: Calibri;
+	background: rgba(148, 105, 63, 0.521);
 }
 
-QTreeWidget::item:hover,
-QTreeWidget::item:selected {
-	border: none;
-
-	background-color: transparent;
-
-	background-image: url(%theme%/lobby/lightglass_bg.png);
-
-	color: white;
+COptions QTreeWidget::item:hover,
+COptions QTreeWidget::branch:hover {
+	background: #e0a663;
 }
 
 CGameInfo QTreeWidget {
@@ -416,8 +408,7 @@ CGameInfo QTreeWidget {
 
 COptions QTreeWidget::item:selected,
 COptions QTreeWidget::branch:selected {
-	background-color: #c7e1f6;
-	color: black;
+	background: #c99559;
 }
 
 CGameRoom QLabel#header {

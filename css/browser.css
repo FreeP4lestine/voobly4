@@ -4,6 +4,11 @@ CGameBrowser {
 	background-repeat: no-repeat;
 }
 
+QTreeView {
+	background: #0269b8;
+	background-repeat: no-repeat;
+}
+
 QFrame#browserGroup {
 	background-image: url(%theme%/internet/mediumglass_bg.png);
 	background-color: transparent;
