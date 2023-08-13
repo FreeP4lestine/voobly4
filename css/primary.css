@@ -10,6 +10,12 @@ QTreeView {
 	background-color: #EADBB2;
 	background-repeat: no-repeat;
 	background-position: center;
+	border: none;
+	color: #000000;
+}
+
+QTreeView::item {
+	color: #000000;
 }
 
 COptions QPushButton,
@@ -382,7 +388,7 @@ CGameInfo QHeaderView {
 	border: 1px solid black;
 }
 
-QTreeWidget {
+COptions QTreeWidget {
 	background: rgba(148, 105, 63, 0.521);
 }
 

@@ -1,4 +1,8 @@
-1 - Links font, background, style modification
-2 - Font Color Preview button background, borders modification
-3 - QTreeView header border modification
-4 - QTreeView header sections border, align modification
+1 - Voobly messenger online & offline users text names font, background, style modification
+2 - Links font, background, style modification
+3 - Font Color Preview button background, borders modification
+4 - QTreeView header border modification
+5 - QTreeView header sections border, align modification
+6 - Image background to QTreeView of the game browser addition
+7 - Qlabel of the game browser font, background, style modification
+8 - QTreeView items font, background, style modification
