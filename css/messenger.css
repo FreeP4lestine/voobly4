@@ -287,9 +287,7 @@ CChatDialog #pushEmoticons:hover {
 	background-image: url(%theme%/buttons/smile_hover.png);
 }
 
-
 CMessenger #userList {
-	color: Black;
 	font-family: Calibri;
 	font-size: 14px;
 	font-weight: bold;
@@ -302,17 +300,14 @@ CMessenger #userList {
 
 CMessenger CUserList::item:hover {
 	background: #e9b423;
-	color: black;
 }
 
 CMessenger CUserList::branch:selected {
 	background: #ecc865;
-	color: Black;
 }
 
 CMessenger CUserList::item:selected {
 	background: #ecc865;
-	color: Black;
 }
 
 CUserList {
@@ -324,6 +319,10 @@ CUserList {
 	qproperty-PremiumColor: #f3a600;
 	qproperty-ModeratorFontWeight: normal;
 	qproperty-PremiumFontWeight: normal;
+}
+
+QTreeView CUserList {
+	font-weight: bold;
 }
 
 QMessageBox QLabel {

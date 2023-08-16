@@ -1,7 +1,8 @@
 CGameBrowser {
-	background-image: url(%theme%/tableview/bg.png);
-	background-color: #0269b8;
+	background-image: url(%theme%/voobly.png);
+	background-color: #EADBB2;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 QFrame#browserGroup {
