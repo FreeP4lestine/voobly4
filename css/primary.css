@@ -359,13 +359,15 @@ COptions QTreeView {
 
 QHeaderView {
 	min-height: 25px;
-	background-color: #a57443;
+	background-color: #D7C8A1;
 	border: none;
+	border-top: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
 }
 
 QHeaderView::section {
 	background-color: transparent;
-	color: #ffffff;
+	color: black;
 	font-family: Calibri;
 	font-weight: bold;
 	font-size: 13px;
@@ -413,9 +415,18 @@ CGameInfo QTreeWidget {
 	/*min-height: 194px;*/
 }
 
-COptions QTreeWidget::item:selected,
+COptions QTreeWidget::item:selected {
+	background-color: #eba45c;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	color: #000000;
+}
+
 COptions QTreeWidget::branch:selected {
 	background-color: #eba45c;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	color: #000000;
 }
 
 CGameRoom QLabel#header {
