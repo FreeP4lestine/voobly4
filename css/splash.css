@@ -7,7 +7,12 @@ CSplash {
 	background-position: center;
 }
 
-CSplash QPushButton {
+CSplash QLabel {
+	font-weight: bold;
+	qproperty-alignment: AlignCenter;
+}
+
+QPushButton {
 	padding-top: 3px;
 	padding-bottom: 3px;
 	padding-left: 10px;
@@ -16,8 +21,8 @@ CSplash QPushButton {
 	height: 20px;
 	color: black;
 	background: #B88851;
-	font-family: Calibri;
-	font-size: 14px;
+	font-family: Tahoma;
+	font-size: 12px;
 	border-top: 2px solid #E4B479;
 	border-right: 2px solid #E4B479;
 	border-left: 2px solid #6F4F2E;
@@ -25,18 +30,18 @@ CSplash QPushButton {
 	font-weight: bold;
 }
 
-CSplash QPushButton:hover {
+QPushButton:hover {
 	color: white;
 }
 
-CSplash QPushButton:pressed {
+QPushButton:pressed {
 	border-left: 2px solid #E4B479;
 	border-bottom: 2px solid #E4B479;
 	border-top: 2px solid #6F4F2E;
 	border-right: 2px solid #6F4F2E;
 }
 
-CSplash QPushButton:disabled {
+QPushButton:disabled {
 	background-color: #888888;
 	border: 1px solid black;
 	border-image: none;
@@ -45,21 +50,19 @@ CSplash QPushButton:disabled {
 CSplash #header {
 	min-height: 40px;
 	background-color: #D7C8A1;
-	font-family: Calibri;
+	font-family: Tahoma;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 20px;
 	qproperty-alignment: AlignCenter;
 }
 
 CSplash #status1 {
-	font-family: Arial;
 	font-size: 14px;
 	padding: 6px;
 	/*border: 1px solid black;*/
 }
 
 CSplash #status2 {
-	font-family: Arial;
 	font-size: 14px;
 	padding: 6px;
 }
@@ -89,7 +92,6 @@ CSplash #pushCancel {
 	padding: 3px;
 }
 
-
 CSplash #animation2 {
 	max-height: 32px;
 	margin-bottom: 5px;
@@ -98,22 +100,18 @@ CSplash #animation2 {
 CSplash #footer {
 	background-color: #D7C8A1;
 	font-weight: bold;
-	font-family: Calibri;
-	font-size: 11px;
+	font-size: 9px;
 	min-height: 30;
-	qproperty-alignment: AlignCenter;
 }
-
 
 CSplash #usernameGroup {
 	border: none;
-	qproperty-alignment: AlignCenter;
 }
 
 CSplash #saveGroup {
 	margin-top: 10px;
 	border: none;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 CSplash #autologin {
@@ -136,17 +134,16 @@ CSplash #registerGroup {
 
 CSplash QCheckBox {
 	color: black;
-	font-size: 12px;
-	font-family: Calibri;
+	font-size: 10px;
 	font-weight: bold;
 }
 
 CSplash QLineEdit {
-	background-color: rgba(255, 255, 255, 0.7);
-	font-size: 16px;
-	font-family: Calibri;
+	color: #44301d;
+	font-size: 14px;
 	font-weight: bold;
-	border: 1px solid #000000;
+	border: none;
+	border-bottom: 2px solid #6F4F2E;
 	margin-bottom: 10px;
 	qproperty-alignment: AlignCenter;
 	width: 250px;
@@ -154,11 +151,11 @@ CSplash QLineEdit {
 }
 
 CSplash QLineEdit:hover {
-	border: 1px solid #0084ff;
+	background-color: aliceblue;
 }
 
 CSplash QLineEdit:focus {
-	border: 2px solid #0084ff;
+	border: 1px solid #6F4F2E;
 }
 
 CSplash #usernameGroup QLabel {
@@ -195,11 +192,4 @@ QCheckBox::indicator:checked:hover {
 
 QCheckBox::indicator:checked:pressed {
 	border-image: url(%theme%/buttons/clicked_border.png);
-}
-
-CSplash QLabel {
-	font-family: Calibri;
-	font-weight: bold;
-	font-size: 13px;
-	qproperty-alignment: AlignCenter;
 }

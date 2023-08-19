@@ -20,7 +20,6 @@ CMessenger CSplash #footer {
 	/*background-color: rgb(173, 173, 173);*/
 }
 
-
 CMessenger CSplash #status1Center {
 	font-family: Arial;
 	font-size: 12px;
@@ -100,9 +99,9 @@ CMessenger #headerImage {
 }
 
 CMessenger #headerName {
-	font-size: 16px;
+	font-size: 14px;
 	color: black;
-	font-family: Calibri;
+	font-family: Tahoma;
 	font-weight: bold;
 }
 
@@ -111,9 +110,9 @@ CMessenger #headerName:hover {
 }
 
 CMessenger #myStatus {
-	font-size: 12px;
+	font-size: 10px;
 	color: black;
-	font-family: Calibri;
+	font-family: Tahoma;
 	font-weight: bold;
 	qproperty-alignment: AlignCenter;
 }
@@ -239,8 +238,6 @@ CChatDialog #headerName:hover {
 	color: rgb(220, 220, 220);
 }
 
-
-
 #OptionGroupBox QPushButton {
 	padding: 0px;
 	border-radius: 0px;
@@ -288,15 +285,13 @@ CChatDialog #pushEmoticons:hover {
 }
 
 CMessenger #userList {
-	font-family: Calibri;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: bold;
 	background: #EADBB2;
 	background-image: url(%theme%/voobly.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
-
 
 CMessenger CUserList::item:hover {
 	background: #e9b423;
@@ -311,18 +306,13 @@ CMessenger CUserList::item:selected {
 }
 
 CUserList {
-	color: Black;
 	qproperty-OnlineColor: black;
 	qproperty-OnlineFontStyle: bold;
 	qproperty-OfflineColor: rgba(0, 0, 0, 0.5);
-	qproperty-ModeratorColor: #ea0000;
-	qproperty-PremiumColor: #f3a600;
+	qproperty-ModeratorColor: #b60000;
+	qproperty-PremiumColor: #be8200;
 	qproperty-ModeratorFontWeight: normal;
 	qproperty-PremiumFontWeight: normal;
-}
-
-QTreeView CUserList {
-	font-weight: bold;
 }
 
 QMessageBox QLabel {
@@ -356,7 +346,6 @@ CLobbyBrowserList {
 	border-radius: 0px;
 	border: none;
 }
-
 
 CLobbyBrowser {
 	background: rgb(240, 240, 240);

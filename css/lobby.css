@@ -18,6 +18,13 @@ CLobby {
 	background-position: top left;
 }
 
+CLobby QTreeView {
+	background-image: url(%theme%/Voobly.png);
+	background-color: rgba(0, 0, 0, 0.5);
+	background-position: center;
+	border: none;
+}
+
 CLobby QSplitter {
 	padding: 0px;
 	margin: 0px;
@@ -393,8 +400,8 @@ CListView {
 	background-repeat: no-repeat;
 	background-position: center;
 	alternate-background-color: rgba(160, 150, 122, 0.26);
-	font-size: 14px;
-	font-family: calibri;
+	font-size: 12px;
+	font-family: Tahoma;
 	font-weight: bold;
 }
 
