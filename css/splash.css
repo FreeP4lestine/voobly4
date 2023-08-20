@@ -1,5 +1,10 @@
 /* Splash Screen */
 
+QSpinBox  {
+	color: brown;
+	border: 1px solid #6F4F2E;
+}
+
 CSplash {
 	background-image: url(%theme%/voobly.png);
 	background-color: #EADBB2;

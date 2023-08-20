@@ -378,6 +378,10 @@ CLobby QHeaderView {
 	border: none;
 }
 
+CLobby QHeaderView::section {
+	border: none;
+}
+
 COptions QHeaderView,
 CGameInfo QHeaderView {
 }
@@ -776,11 +780,4 @@ CSplash QPlainTextEdit {
 	margin-left: auto;
 	margin-bottom: 10px;
 	width: 200px;
-}
-
-CLobby QTreeView {
-	background-image: url(%theme%/voobly.png);
-	background-color: #EADBB2;
-	background-repeat: no-repeat;
-	background-position: center;
 }

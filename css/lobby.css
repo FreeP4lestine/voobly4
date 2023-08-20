@@ -5,6 +5,10 @@ QWidget {
 	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
 }
 
+QSpinBox  {
+	border: 1px solid #6F4F2E;
+}
+
 CEmoticons {
 	background-color: white;
 	color: black;
@@ -19,10 +23,20 @@ CLobby {
 }
 
 CLobby QTreeView {
-	background-image: url(%theme%/Voobly.png);
-	background-color: rgba(0, 0, 0, 0.5);
-	background-position: center;
+	background-color: #000000;
+	color: white;
 	border: none;
+}
+
+CLobby QHeaderView::section:first {
+	margin-left: 3px;
+}
+
+COptions QTreeView {
+	color: #000000;
+	background-color: #D7C8A1;
+	border: none;
+	border-bottom: 8px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(0, 0, 0), stop: 0.5 rgb(234, 219, 178));
 }
 
 CLobby QSplitter {
@@ -32,30 +46,16 @@ CLobby QSplitter {
 
 CULSplitter#splitter_2:handle,
 CGameRoom QSplitter::handle {
-	background: transparent;
-	background-image: url(%theme%/lobby/horz_grabbar_top.png);
-	background-repeat: repeat-y;
-
+	background: #6F4F2E;
 	border: 1px solid rgb(0, 0, 0);
 	border-top: none;
-
-
-	margin: 0px 0px 0px 5px;
-
-	padding: 0px 2px 0px 0px;
 }
 
 
 CVSplitter#splitter:handle {
-	background: transparent;
-	background-image: url(%theme%/lobby/horz_grabbar_top.png);
-	background-repeat: repeat-x;
-
+	background: #6F4F2E;
 	border: 1px solid rgb(0, 0, 0);
-
-	margin: 0px 0px 0px 0px;
-
-	padding: 2px 0px 0px 0px;
+	border-top: none;
 }
 
 CGameRoom QSplitter::handle {
@@ -138,27 +138,27 @@ CChatArea #send:disabled {
 	color: rgb(150, 150, 150);
 }
 
-
-QPushButton {
-	min-height: 23px;
-
+COptions QPushButton {
 	margin: 0px;
 	padding: 0px;
-	background-color: transparent;
-	background-image: url(none);
-	border-image: url(%theme%/buttons/normal_options_button.png);
-	color: black;
-
+	border-top: 2px solid #E4B479;
+	border-right: 2px solid #E4B479;
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
+	background: #B88851;
+	font-family: Tahoma;
+	font-weight: bold;
 }
 
-QPushButton:hover,
-QPushButton:focus {
-	border-image: url(%theme%/buttons/hover_options_button.png);
+COptions QPushButton:hover {
+	color: white;
 }
 
-QPushButton:pressed {
-	border-image: url(%theme%/buttons/pressed_options_button.png);
-
+COptions QPushButton:pressed {
+	border-left: 2px solid #E4B479;
+	border-bottom: 2px solid #E4B479;
+	border-top: 2px solid #6F4F2E;
+	border-right: 2px solid #6F4F2E;
 }
 
 QDialog#GameResume QLabel#label {
@@ -403,6 +403,7 @@ CListView {
 	font-size: 12px;
 	font-family: Tahoma;
 	font-weight: bold;
+	border: none;
 }
 
 CListView::item:selected {
