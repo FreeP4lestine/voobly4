@@ -23,12 +23,12 @@ CLobby {
 }
 
 CLobby QTreeView {
-	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.904);
 	color: white;
 	border: none;
 }
 
-CLobby QHeaderView::section:first {
+CLobby QHeaderView::section {
 	margin-left: 3px;
 }
 
@@ -47,15 +47,24 @@ CLobby QSplitter {
 CULSplitter#splitter_2:handle,
 CGameRoom QSplitter::handle {
 	background: #6F4F2E;
-	border: 1px solid rgb(0, 0, 0);
-	border-top: none;
+	border: none;
+	min-width: 5px;
 }
 
+CULSplitter#splitter_2:handle:pressed,
+CGameRoom QSplitter::handle:pressed {
+	background: #ffffff;
+}
 
 CVSplitter#splitter:handle {
 	background: #6F4F2E;
-	border: 1px solid rgb(0, 0, 0);
-	border-top: none;
+	min-height: 5px;
+	border: none;
+}
+
+CVSplitter#splitter:handle:pressed {
+	background: #ffffff;
+	border: none;
 }
 
 CGameRoom QSplitter::handle {
@@ -64,13 +73,11 @@ CGameRoom QSplitter::handle {
 
 
 CLobby CChatText {
+	background-image: url(%theme%/voobly.png);
+	background-color: #EADBB2;
+	background-repeat: no-repeat;
+	background-position: center;
 	border: none;
-	border-bottom: 1px solid black;
-
-	background: white;
-
-	padding: 0px;
-	margin: 0px;
 }
 
 CLobby CChatArea #LobbyChatTextGroup,
@@ -394,11 +401,15 @@ CLobby QTreeView {
 	background-image: #C5945A;
 }
 
-CListView {
+CLobby {
 	background-image: url(%theme%/de_civs.png);
 	background-color: #EADBB2;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+CListView {
+	background-color: transparent;
 	alternate-background-color: rgba(160, 150, 122, 0.26);
 	font-size: 12px;
 	font-family: Tahoma;
@@ -407,16 +418,14 @@ CListView {
 }
 
 CListView::item:selected {
+	background-color: #c4b795;
+	border-top: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
+	color: rgb(109, 0, 0);
+}
 
-
-	background-image: url(%theme%/listview/hover_bar.png);
-	background-repeat: repeat-x;
-	background-color: transparent;
-
-
-
-	color: #fffef4;
-
+CListView::item:pressed {
+	background-color: #796a45;
 }
 
 #tableView {

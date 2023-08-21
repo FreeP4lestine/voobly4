@@ -6,12 +6,8 @@ QWidget {
 }
 
 QTreeView {
-	background-color: #d6d6d6;
+	background-color: #EADBB2;
 	border: none;
-}
-
-QLabel {
-	qproperty-alignment: AlignCenter;
 }
 
 COptions QPushButton,
@@ -292,20 +288,8 @@ CLobby QMenuBar {
 
 QToolBar {
 	min-height: 40px;
-
 	background-image: url(%theme%/lobby/tool_bg.png);
 	background-repeat: repeat-x;
-
-	background-color: transparent;
-
-	border-top: 1px solid black;
-	border-bottom: 2px solid black;
-
-	margin: 0px;
-	padding: 0px 0px 0px 0px;
-
-	image: url(%theme%/lobby/logo.png);
-
 }
 
 QToolBar::separator {
@@ -320,28 +304,20 @@ QToolBar::handle {
 
 QToolButton {
 	max-height: 40px;
-
 	margin: 0px;
 	padding-right: 2px;
-
 	text-align: middle;
 	border: none;
-
 	font-size: 12px;
-
-	color: rgb(220, 220, 220);
-
-
+	color: rgb(255, 255, 255);
 }
 
 QToolButton:hover {
-	border-image: url(%theme%/lobby/tool_button_hover.png);
-
-	color: white;
+	border-bottom: 2px solid white;
 }
 
 QToolButton:pressed {
-	border-image: url(%theme%/lobby/tool_button_pressed.png);
+	color: yellow;
 }
 
 QToolButton:disabled {
@@ -380,6 +356,8 @@ CLobby QHeaderView {
 
 CLobby QHeaderView::section {
 	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 COptions QHeaderView,
