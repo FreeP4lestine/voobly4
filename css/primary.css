@@ -5,6 +5,18 @@ QWidget {
 	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana, 'Gill Sans', 'Gill Sans MT', Tahoma, 'Trebuchet MS', sans-serif;
 }
 
+QLabel {
+	background-color: #EADBB2;
+}
+
+CMessenger QLabel {
+	background-color: transparent;
+}
+
+CSplash QLabel {
+	background-color: transparent;
+}
+
 QTreeView {
 	background-color: #EADBB2;
 	border: none;
