@@ -2,7 +2,15 @@ QWidget {
 	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
 }
 
-#JoinButton,
+#JoinButton {
+	min-height: 17px;
+	max-width: none;
+	min-width: 67px;
+	border-image: url(%theme%/buttons/normal_playing_listview_button.png);
+	margin: 0px;
+	padding: 0px;
+}
+
 #InfoButton {
 	min-height: 17px;
 	max-width: none;
@@ -35,5 +43,5 @@ QWidget {
 }
 
 #InfoButton:pressed {
-	border-image: url(%theme%/buttons/pressed_empty_listview_button.png);
+	border-image: url(%theme%/buttons/pressed_playing_listview_button.png);
 }
