@@ -209,53 +209,63 @@ QPushButton#fontColor {
 
 
 QPushButton#pushSettings {
-	min-height: 27px;
-	max-height: 27px;
+	min-height: 20px;
+	max-height: 20px;
 
-	min-width: 77px;
-	max-width: 77px;
+	min-width: 80px;
+	max-width: 80px;
 
-	background-color: transparent;
-
-	border-image: url(%theme%/buttons/normal_settings_button.png);
+	background: #a18565;
+	border-top: 2px solid #e0bd93;
+	border-right: 2px solid #e0bd93;
+	border-left: 2px solid #6e5842;
+	border-bottom: 2px solid #6e5842;
 
 	margin-left: 10px;
 }
 
 QPushButton#pushSettings:hover {
-	border-image: url(%theme%/buttons/hover_settings_button.png);
+	color: #ffffff;
 }
 
 QPushButton#pushSettings:pressed {
-	border-image: url(%theme%/buttons/pressed_settings_button.png);
+	border-left: 2px solid #e0bd93;
+	border-bottom: 2px solid #e0bd93;
+	border-top: 2px solid #6e5842;
+	border-right: 2px solid #6e5842;
 }
 
 QPushButton#pushLaunch {
-	min-height: 27px;
-	max-height: 27px;
+	min-height: 20px;
+	max-height: 20px;
 
-	min-width: 77px;
-	max-width: 85px;
+	min-width: 80px;
+	max-width: 80px;
 
-	background-color: transparent;
-
-	border-image: url(%theme%/buttons/normal_launch_button.png);
+	background: #B88851;
+	border-top: 2px solid #E4B479;
+	border-right: 2px solid #E4B479;
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
 
 	font-weight: bold;
 }
 
 QPushButton#pushLaunch:hover {
-	border-image: url(%theme%/buttons/hover_launch_button.png);
+	color: #ffffff;
 }
 
 QPushButton#pushLaunch:pressed {
-	border-image: url(%theme%/buttons/pressed_launch_button.png);
+	border-left: 2px solid #E4B479;
+	border-bottom: 2px solid #E4B479;
+	border-top: 2px solid #6F4F2E;
+	border-right: 2px solid #6F4F2E;
 }
 
 QPushButton#pushLaunch:disabled {
-	margin-left: 10px;
-	border-image: url(%theme%/buttons/disabled_launch_button.png);
-	color: #235f0e;
+	background-color: #888888;
+	border: 1px solid black;
+	border-image: none;
 }
 
 QPushButton:disabled {
