@@ -12,6 +12,7 @@ QWidget {
 }
 
 #JoinButton:hover {
+	color: white;
 	border-image: url(%theme%/buttons/hover_empty_listview_button.png);
 }
 
@@ -19,10 +20,11 @@ QWidget {
 #JoinButton:disabled {
 	border-image: url(%theme%/buttons/disabled_empty_listview_button.png);
 	color: black;
+	background: transparent;
 }
 
 #JoinButton:pressed {
-	border-image: url(%theme%/buttons/pressed_empty_listview_button.png);
+	text-decoration: underline;
 }
 
 #InfoButton {

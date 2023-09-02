@@ -209,63 +209,50 @@ QPushButton#fontColor {
 
 
 QPushButton#pushSettings {
-	min-height: 20px;
-	max-height: 20px;
+	min-height: 25px;
+	max-height: 25px;
 
 	min-width: 80px;
 	max-width: 80px;
 
-	background: #a18565;
-	border-top: 2px solid #e0bd93;
-	border-right: 2px solid #e0bd93;
-	border-left: 2px solid #6e5842;
-	border-bottom: 2px solid #6e5842;
-
-	margin-left: 10px;
+	background:transparent;
+	background-image: url(%theme%/buttons/normal_settings_button.png);
 }
 
 QPushButton#pushSettings:hover {
 	color: #ffffff;
+	background-image: url(%theme%/buttons/hover_settings_button.png);
 }
 
 QPushButton#pushSettings:pressed {
-	border-left: 2px solid #e0bd93;
-	border-bottom: 2px solid #e0bd93;
-	border-top: 2px solid #6e5842;
-	border-right: 2px solid #6e5842;
+	text-decoration: underline;
 }
 
 QPushButton#pushLaunch {
-	min-height: 20px;
-	max-height: 20px;
+	min-height: 25px;
+	max-height: 25px;
 
 	min-width: 80px;
 	max-width: 80px;
 
-	background: #B88851;
-	border-top: 2px solid #E4B479;
-	border-right: 2px solid #E4B479;
-	border-left: 2px solid #6F4F2E;
-	border-bottom: 2px solid #6F4F2E;
+	background:transparent;
+	background-image: url(%theme%/buttons/normal_launch_button.png);
 
 	font-weight: bold;
 }
 
 QPushButton#pushLaunch:hover {
 	color: #ffffff;
+	background-image: url(%theme%/buttons/hover_launch_button.png);
 }
 
 QPushButton#pushLaunch:pressed {
-	border-left: 2px solid #E4B479;
-	border-bottom: 2px solid #E4B479;
-	border-top: 2px solid #6F4F2E;
-	border-right: 2px solid #6F4F2E;
+	text-decoration: underline;
 }
 
 QPushButton#pushLaunch:disabled {
-	background-color: #888888;
-	border: 1px solid black;
-	border-image: none;
+	background-image: url(%theme%/buttons/disabled_launch_button.png);
+	color: #666666;
 }
 
 QPushButton:disabled {

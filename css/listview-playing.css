@@ -21,27 +21,30 @@ QWidget {
 }
 
 #JoinButton:hover {
+	color: white;
 	border-image: url(%theme%/buttons/hover_playing_listview_button.png);
 }
 
 #JoinButton:pressed {
-	border-image: url(%theme%/buttons/pressed_playing_listview_button.png);
+	text-decoration: underline;
 }
 
 #JoinButton:disabled {
 	border-image: url(%theme%/buttons/disabled_playing_listview_button.png);
 	color: black;
+	background: transparent;
 }
 
 #InfoButton {
 	min-width: none;
-	border-image: url(%theme%/buttons/normal_empty_listview_button.png);
+	border-image: url(%theme%/buttons/normal_info_listview_button.png);
 }
 
 #InfoButton:hover {
-	border-image: url(%theme%/buttons/hover_empty_listview_button.png);
+	color: white;
+	border-image: url(%theme%/buttons/hover_info_listview_button.png);
 }
 
 #InfoButton:pressed {
-	border-image: url(%theme%/buttons/pressed_playing_listview_button.png);
+	text-decoration: underline;
 }
