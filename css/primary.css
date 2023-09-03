@@ -423,26 +423,6 @@ CGameRoom QLabel#header {
 	max-height: 30;
 }
 
-CGameRoom QLabel {
-	background-color: transparent;
-	color: white;
-	border: 1px solid black;
-	border-right: none;
-	padding-bottom: 3px;
-}
-
-CGameRoom QHeaderView {
-	border: 1px solid black;
-	border-right: none;
-
-}
-
-CGameRoom QTreeWidget {
-	background-image: url(none);
-	min-height: 195px;
-}
-
-
 #fontColor {
 	padding: 0px;
 	border-radius: 0px;

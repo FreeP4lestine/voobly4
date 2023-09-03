@@ -32,6 +32,8 @@ CLobby QHeaderView::section {
 	margin-left: 3px;
 }
 
+COptions
+
 COptions QTreeView {
 	color: #000000;
 	background-color: #D7C8A1;
@@ -95,54 +97,43 @@ CGameRoom CChatArea #LobbyChatTextGroup {
 }
 
 CChatArea #input {
-	min-height: 29px;
-
+	min-height: 28px;
+	font-weight: bold;
 	font-size: 13px;
-
 	border: none;
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
-
-	background-color: transparent;
-	background-image: url(%theme%/chat_textgroup2.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
-
+	border-bottom: 1px solid #6F4F2E;
 	padding: 0px;
+}
+
+CChatArea #input:focus {
+	border-bottom: 3px solid #6F4F2E;
 }
 
 CLobby CChatArea #send,
 CGameRoom CChatArea #send {
-	border-image: url(none);
-	min-width: 0px;
-	min-height: 0px;
-	max-height: none;
-
+	min-width: 80px;
+	max-width: 80px;
+	min-height: 30px;
+	max-height: 30px;
 	border: none;
-	border-radius: 0px;
-	border-left: 1px dashed rgb(180, 180, 180);
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-
-	background-color: transparent;
-	background-image: url(%theme%/chat_textgroup2.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
-
-
-	margin: 0px;
-	padding: 0px 7px;
-
-	color: black;
+	background: #ffffff;
+	background-image: url(%theme%/normal_send.png);
+	color: #ffffff;
+	font-weight: bold;
 }
 
-CChatArea #send:hover,
+CChatArea #send:hover {
+	color: #ffffff;
+	background-image: url(%theme%/hover_send.png);
+}
+
 CChatArea #send:pressed {
-	color: rgb(50, 50, 50);
+	text-decoration: underline;
 }
 
 CChatArea #send:disabled {
-	color: rgb(150, 150, 150);
+	color: #999999;
+	background-image: url(%theme%/disabled_send.png);
 }
 
 COptions QPushButton {
@@ -264,13 +255,13 @@ QPushButton:disabled {
 
 
 #smileyButton {
-	border-image: url(none);
+	border: none;
 	min-width: 0px;
 	min-height: 0px;
 	max-height: none;
 
 	image: url(%theme%/buttons/smile.png);
-
+	background: transparent;
 	border: 1px solid #000000;
 	border-radius: 0px;
 
@@ -282,17 +273,7 @@ CGameRoom #smileyButton {
 	width: 35px;
 
 	background-color: transparent;
-	background-image: url(%theme%/chat_textgroup2.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
-
 	border: none;
-	border-right: 1px dashed rgb(180, 180, 180);
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-
-	padding: 0px;
-
 }
 
 #smileyButton:hover,
@@ -375,27 +356,62 @@ CGameInfo QLabel {
 }
 
 CGameRoom {
-	background-color: #004d82;
-	background-image: url(%theme%/lobby/g_bg.png);
-	background-repeat: no-repeat;
-
+	background: transparent;
+	background-color: qlineargradient(x1: 1, y1: 1, x2: 0, y2: 0, stop: 0 #EADBB2, stop: 1 #867d65);
 	border: none;
-
 	qproperty-GameModLinkColor: rgb(255, 255, 255);
 }
 
+CGameRoom QTreeWidget {
+	border-top: 8px solid qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 rgb(0, 0, 0), stop: 0.5 rgb(234, 219, 178));
+	border-bottom: 8px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(0, 0, 0), stop: 0.5 rgb(234, 219, 178));
+	background-color: rgba(0, 0, 0, 0.904);
+	color: white;
+	border: none;
+}
+
+COptions QTreeWidget::item {
+	color: #000000;
+	background-color: #D7C8A1;
+}
+
+CGameRoom QHeaderView {
+	border: none;
+}
+
+CGameRoom QHeaderView::section {
+	border: none;
+	border-top: 1px solid black;
+}
+
+CGameRoom QHeaderView::section:hover {
+	background-color: #b1a584;
+}
+
+CGameRoom QHeaderView:hover {
+	background-color: #b1a584;
+}
+
+CGameRoom QLabel {
+	border: none;
+	color: black;
+}
 
 CGameRoom QWidget#layoutWidget {
-	background-image: url(%theme%/lobby/darkglass_bg.png);
+	background-color: #EADBB2;
+	border: none;
+	min-width: 220px;
+	min-height: 250px;
 }
 
 CGameRoom CChatText {
-	border: 1px solid white;
-	background: rgb(240, 240, 240);
-}
-
-CLobby QTreeView {
-	background-image: #C5945A;
+	border: none;
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	background: rgb(255, 255, 255);
+	background-image: url(%theme%/knight.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
 }
 
 CLobby {
