@@ -2,7 +2,7 @@
 
 #include <gdip_all>
 
-emojs := fileopen("flags.html", "r")
+emojs := fileopen("flags.list", "r")
 while !emojs.AtEOF {
     if p := instr(l := emojs.readline(), "src") {
         lnk := substr(l, 26, - 1)
