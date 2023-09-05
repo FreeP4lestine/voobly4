@@ -227,11 +227,11 @@ CChatDialog #headerImage {
 }
 
 CChatDialog #headerName {
+	background: transparent;
 	margin: 8px 0px 0px 3px;
 	font-size: 13px;
 	font-weight: bold;
 	border: none;
-	color: white;
 }
 
 CChatDialog #headerName:hover {

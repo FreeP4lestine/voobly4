@@ -347,20 +347,16 @@ CGameSettings QLabel {
 }
 
 CGameInfo {
-
-
-
-	border: 1px solid #004376;
-
+	border-top: 4px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-bottom: 4px solid #000000;
 	padding: 6px;
-
-
-	background-color: #00375e;
-
+	background-color: #D7C8A1;
 }
 
 CGameInfo QLabel {
-	color: white;
+	background: transparent;
 }
 
 CGameRoom {
@@ -512,25 +508,22 @@ CUserList {
 	qproperty-LookingColor: rgb(250, 250, 250);
 	qproperty-WaitingColor: rgb(175, 175, 175);
 	qproperty-PlayingColor: rgb(100, 100, 100);
-
 	qproperty-ModeratorColor: #f48d8d;
-
 	qproperty-PremiumColor: #e2d434;
-
 	qproperty-ModeratorFontWeight: normal;
 	qproperty-PremiumFontWeight: normal;
-
 	qproperty-ParentWeight: 504;
-
 	font-size: 13px;
 }
 
-QMessageBox QLabel {
-
-	border: 1px solid black;
-	color: black;
+QMessageBox {
+	background-color: #D7C8A1;
 }
 
+QMessageBox QLabel {
+	background-color: transparent;
+	border: none;
+}
 
 QMessageBox QPushButton {
 	padding-top: 1px;
@@ -538,8 +531,6 @@ QMessageBox QPushButton {
 	padding-left: 10px;
 	padding-right: 10px;
 }
-
-
 
 CChatArea QTabWidget::pane {
 	/* The tab widget frame */
@@ -549,24 +540,18 @@ CChatArea QTabWidget::pane {
 }
 
 CChatArea QTabWidget::tab-bar {
-	left: 5px;
-	/* move to the right by 5px */
+	/*left: 5px;
+	 move to the right by 5px */
+	 background-color: #E4B479;
 }
 
 /* Style the tab using the tab sub-control. Note that
      it reads QTabBar _not_ QTabWidget */
 CChatArea QTabBar::tab {
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-			stop: 0 #0099df, stop: 0.4 #028bd1,
-			stop: 0.5 #028bd1, stop: 1.0 #025fa2);
-	border-left: 1px solid #00aeeb;
-	border-top: 1px solid #00aeeb;
+	background: #6F4F2E;
 	color: white;
-	border-bottom: 0px;
-	border-bottom-color: transparent;
 	/* same as the pane color */
 	min-width: 8ex;
-	padding: 2px 00px 2px 00px;
 	text-align: center;
 	margin-bottom: 2px;
 	height: 22px;
@@ -575,21 +560,11 @@ CChatArea QTabBar::tab {
 
 CChatArea QTabBar::tab:selected,
 QTabBar::tab:hover {
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-			stop: 0 #fafafa, stop: 0.4 #f4f4f4,
-			stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+	background: white;
+	border-top: 3px solid #6F4F2E;
 	color: black;
 	font-weight: bold;
 }
-
-CChatArea QTabBar::tab:selected {
-	border-color: #9B9B9B;
-	border-bottom: 0px solid #C2C7CB;
-	/* same as pane color */
-	color: black;
-	font-weight: bold;
-}
-
 
 CChatArea QTabBar::tab: !selected {
 	margin-top: 0px;
