@@ -118,45 +118,28 @@ CMessenger #myStatus {
 }
 
 CChatDialog {
-	background-color: #00375e;
-	background-image: url(%theme%/lobby/q_bg.png);
+	background-image: url(%theme%/voobly.png);
+	background-color: #EADBB2;
 	background-repeat: no-repeat;
-
-	margin: 0px;
-	padding: 0px;
-
+	background-position: center;
 }
 
 
 CChatDialog QWidget#layoutWidget {
-	border: 1px solid black;
-	border-bottom: 1px solid #000000;
-
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-
-	background-color: black;
-
-	margin: 0px 1px 0px 0px;
+	border: none;
+	border-top: 2px solid #6F4F2E;
+	background: transparent;
 }
 
 
 CChatDialog CChatText {
 	border: none;
-
-	padding: 0px;
-	margin: 0px 1px;
-
-	background-color: white;
+	background: rgba(255, 255, 255, 0.671);
 }
 
 CChatDialog QSplitter::handle {
-	background-color: rgb(240, 240, 240);
-
-	border: 1px solid rgb(250, 250, 250);
-
-	margin: 0px 1px;
-	padding: 3px 0px;
+	background: #6F4F2E;
+	height: 3px;
 }
 
 CChatDialog #OptionGroupBox {
@@ -171,57 +154,45 @@ CChatDialog #OptionGroupBox {
 }
 
 CChatDialog #EditGroupBox {
-
 	border: none;
-
-	background-color: white;
-	background-image: url(%theme%/chat_textgroup.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
-
-
 	margin: 0px 1px;
 }
 
 CChatDialog QPlainTextEdit {
-	min-height: 32px;
+	max-height: 30;
 	font-size: 12px;
-
-
-	border: 1px solid rgb(250, 250, 250);
-	border-bottom-left-radius: 3px;
-
-	background-color: white;
-	background-image: url(%theme%/chat_textgroup.png);
-	background-repeat: repeat-x;
-	background-position: bottom;
-
-	padding: 0px;
+	border: none;
+	border-bottom: 2px solid #6F4F2E;
 }
 
 CChatDialog #send {
-	background-color: rgb(240, 240, 240);
-
-	border: 1px solid rgb(250, 250, 250);
-	border-left: 1px solid rgb(220, 220, 220);
-
-	border-bottom-right-radius: 3px;
-
-	padding: 0px 5px;
+	min-width: 80px;
+	max-width: 80px;
+	min-height: 30px;
+	max-height: 30px;
+	border: none;
+	background: transparent;
+	background-image: url(%theme%/normal_send.png);
+	color: #ffffff;
+	font-weight: bold;
 }
 
-CChatDialog #send:hover,
+CChatDialog #send:hover {
+	color: #ffffff;
+	background-image: url(%theme%/hover_send.png);
+}
+
 CChatDialog #send:pressed {
-	background-color: rgb(220, 220, 220);
-	color: rgb(100, 100, 100);
+	text-decoration: underline;
 }
 
 CChatDialog #send:disabled {
-	color: rgb(150, 150, 150);
+	color: #999999;
+	background-image: url(%theme%/disabled_send.png);
 }
 
-
 CChatDialog #headerImage {
+	background: transparent;
 	margin: 8px 0px 0px 10px;
 	padding: 0px 0px 0px 5px;
 }
@@ -235,8 +206,14 @@ CChatDialog #headerName {
 }
 
 CChatDialog #headerName:hover {
-	color: rgb(220, 220, 220);
+	color: darkred;
 }
+
+CChatDialog #OptionGroupBox {
+	border: none;
+	background: transparent;
+}
+
 
 #OptionGroupBox QPushButton {
 	padding: 0px;
@@ -313,11 +290,6 @@ CUserList {
 	qproperty-PremiumColor: #be8200;
 	qproperty-ModeratorFontWeight: normal;
 	qproperty-PremiumFontWeight: normal;
-}
-
-QMessageBox QLabel {
-	border: 0px solid black;
-	color: rgb(173, 35, 35);
 }
 
 CLobbyBrowserList::item:hover,

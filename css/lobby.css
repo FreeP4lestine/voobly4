@@ -5,6 +5,55 @@ QWidget {
 	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
 }
 
+QDialog {
+	background-image: url(%theme%/voobly.png);
+	background-color: #EADBB2;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+QDialog QLabel {
+	background: transparent;
+}
+
+QDialog QPushButton {
+	min-width: 100px;
+	min-height: 20px;
+	background: #B88851;
+	font-family: Tahoma;
+	font-size: 12px;
+	border-top: 2px solid #E4B479;
+	border-right: 2px solid #E4B479;
+	border-left: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
+	font-weight: bold;
+}
+
+QDialog QPushButton:hover {
+	color: white;
+}
+
+QDialog QPushButton:pressed {
+	border-left: 2px solid #E4B479;
+	border-bottom: 2px solid #E4B479;
+	border-top: 2px solid #6F4F2E;
+	border-right: 2px solid #6F4F2E;
+}
+
+QDialog QPushButton:disabled {
+	background-color: #888888;
+	border: 1px solid black;
+	border-image: none;
+}
+
+QDialog QTextEdit {
+	background: transparent;
+	font-weight: bold;
+	border: none;
+	border-left: 2px solid #6F4F2E;
+	color: darkblue;
+}
+
 QSpinBox {
 	border: 1px solid #6F4F2E;
 }
@@ -505,11 +554,11 @@ CUserList
 */
 
 CUserList {
-	qproperty-LookingColor: rgb(250, 250, 250);
-	qproperty-WaitingColor: rgb(175, 175, 175);
-	qproperty-PlayingColor: rgb(100, 100, 100);
-	qproperty-ModeratorColor: #f48d8d;
-	qproperty-PremiumColor: #e2d434;
+	qproperty-LookingColor: rgb(255, 255, 255);
+	qproperty-WaitingColor: rgb(192, 192, 192);
+	qproperty-PlayingColor: rgb(114, 114, 114);
+	qproperty-ModeratorColor: #ff0000;
+	qproperty-PremiumColor: #ffea00;
 	qproperty-ModeratorFontWeight: normal;
 	qproperty-PremiumFontWeight: normal;
 	qproperty-ParentWeight: 504;
@@ -523,6 +572,8 @@ QMessageBox {
 QMessageBox QLabel {
 	background-color: transparent;
 	border: none;
+	font-weight: bold;
+	color: darkred;
 }
 
 QMessageBox QPushButton {
@@ -542,7 +593,7 @@ CChatArea QTabWidget::pane {
 CChatArea QTabWidget::tab-bar {
 	/*left: 5px;
 	 move to the right by 5px */
-	 background-color: #E4B479;
+	background-color: #E4B479;
 }
 
 /* Style the tab using the tab sub-control. Note that
