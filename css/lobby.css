@@ -365,6 +365,7 @@ CGameSettings QPushButton:disabled {
 
 CGameSettings QTextEdit#description,
 CGameSettings QLineEdit {
+	background: white;
 	font-weight: bold;
 	border: none;
 	border-bottom: 1px solid #6F4F2E;
