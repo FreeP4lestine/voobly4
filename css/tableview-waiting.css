@@ -50,24 +50,17 @@ QWidget {
 }
 
 #m_InfoButton {
-	background-color: transparent;
-	background-image: url(%theme%/tableview/info_button.png);
-	background-repeat: no-repeat;
-
-	border-image: url(none);
-	border: none;
-
-	color: transparent;
-
-
-	padding: 0px;
-	margin: 0px;
+	color: black;
+	font-weight: bold;
+	color: #008080;
+	border-image: url(%theme%/tableview/info_button_waiting.png);
 }
 
 #m_InfoButton:hover {
-	background-image: url(%theme%/tableview/info_button_hover.png);
+	color: white;
+	border-image: url(%theme%/tableview/info_button_waiting_hover.png);
 }
 
 #m_InfoButton:pressed {
-	background-image: url(%theme%/tableview/info_button_pressed.png);
+	text-decoration: underline;
 }
