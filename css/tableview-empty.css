@@ -1,47 +1,55 @@
-QWidget
-{
+QWidget {
 	font-family: Arial, Tahoma, Microsoft Sans Serif, Verdana;
 }
 
-#m_CountItem
-{
-	color: white;	
+#Icons {
+	background-color: transparent;
 }
 
-#gameNum
-{
-	color: white;	
+#m_CountItem {
+	font-weight: bold;
+	border: 2px solid #000000;
+	background: #EADBB2;
 }
 
-#m_TitleItem
-{
-	color: white;	
+#gameNum {
+	font-size: 14px;
+	font-style: italic;
+	color: darkred;
+	font-weight: bold;
+	background-color: transparent;
+}
+
+#m_TitleItem {
+	font-weight: bold;
+	background-color: transparent;
+}
+
+#m_icons {
+	background-color: transparent;
 }
 
 #m_JoinButton {
+	color: black;
 	background-color: transparent;
 	background-image: url(%theme%/tableview/main_button.png);
 	background-repeat: no-repeat;
-
 	border-image: url(none);
 	border: none;
-	
-	color: white;
-
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
-
-	padding: 0px;
-	padding-right: 21px;
 }
+
 #m_JoinButton:hover {
+	color: white;
 	background-image: url(%theme%/tableview/main_button_hover.png);
 }
+
 #m_JoinButton:pressed {
-	background-image: url(%theme%/tableview/main_button_pressed.png);
+	text-decoration: underline;
 }
+
 #m_JoinButton:disabled {
-	color: #bbbbbb;
 	background-image: url(%theme%/tableview/main_button_disabled.png);
 }
 

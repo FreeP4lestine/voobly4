@@ -12,7 +12,7 @@ QDialog {
 	background-position: center;
 }
 
-QDialog QLabel {
+QLabel {
 	background: transparent;
 }
 
@@ -496,20 +496,13 @@ CListView::item:pressed {
 }
 
 #tableView {
-
 	background-color: transparent;
-
-	background-image: url(%theme%/Voobly.png);
-
-
 	border: none;
-
 	padding: 0px 0px 0px 3px;
 }
 
 
 #TableViewWidget {
-
 	background-color: transparent;
 }
 

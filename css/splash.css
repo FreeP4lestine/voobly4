@@ -1,10 +1,5 @@
 /* Splash Screen */
 
-QSpinBox  {
-	color: brown;
-	border: 1px solid #6F4F2E;
-}
-
 CSplash {
 	background-image: url(%theme%/voobly.png);
 	background-color: #EADBB2;
@@ -24,7 +19,6 @@ QPushButton {
 	padding-right: 10px;
 	width: 100px;
 	height: 20px;
-	color: black;
 	background: #B88851;
 	font-family: Tahoma;
 	font-size: 12px;

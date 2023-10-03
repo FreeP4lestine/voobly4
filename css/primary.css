@@ -512,27 +512,17 @@ CEmoticons {
 /* Customize combo and spin boxes. */
 QComboBox,
 QSpinBox {
-	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #eeeeee, stop: 1 #ffffff);
-
-	border-top: 1px solid #354855;
-	border-left: 1px solid #354855;
-	border-bottom: 1px solid #50616d;
-	border-right: 1px solid #50616d;
-	border-radius: 3px;
-
-	color: black;
-	padding: 3px 0px 3px 3px;
+	min-height: 22px;
+	border: none;
+	border-top: 1px solid #6F4F2E;
+	border-bottom: 1px solid #6F4F2E;
 }
-
-QSpinBox {
-	padding: 3px 0px 3px 0px;
-}
-
 
 QComboBox:on,
 QComboBox:focus,
 QSpinBox:focus {
-	border: 1px solid #ffffff;
+	border-top: 2px solid #6F4F2E;
+	border-bottom: 2px solid #6F4F2E;
 }
 
 QComboBox::drop-down,
