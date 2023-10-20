@@ -456,6 +456,14 @@ CUserTipLabel {
 
 }
 
+QMessageBox {
+	background-image: url(%theme%/voobly.png);
+	background-color: #EADBB2;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-weight: bold;
+}
+
 /* Alert Popups */
 CAlert {
 	background-color: rgb(230, 230, 230);
@@ -473,22 +481,17 @@ CAlert QLabel {
 	color: black;
 }
 
-
 /* popup menu header */
 #MenuCaption {
-	background-color: black;
-
-
-	border: 1px solid white;
-
-	color: rgb(245, 245, 245);
+	min-width: 200px;
+	background-color: #bbaa80;
+	border: none;
+	border-bottom: 2px solid black;
 	font-size: 12px;
 	font-weight: bold;
-
-	margin-right: 1px;
 	padding: 4px;
+	color: darkred;
 }
-
 
 CEmoticons {
 	background-color: white;
