@@ -233,29 +233,6 @@ CMessenger #userList {
 }
 /* ---------------------------------------- */
 
-CMessenger CUserList::item:hover {
-	background: #e9b423;
-}
-
-CMessenger CUserList::branch:selected {
-	background: #c0941a;
-}
-
-CMessenger CUserList::item:selected {
-	color: darkred;
-	background: #ecc865;
-}
-
-CUserList {
-	qproperty-OnlineColor: black;
-	qproperty-OnlineFontStyle: bold;
-	qproperty-OfflineColor: rgba(0, 0, 0, 0.5);
-	qproperty-ModeratorColor: #b60000;
-	qproperty-PremiumColor: #be8200;
-	qproperty-ModeratorFontWeight: normal;
-	qproperty-PremiumFontWeight: normal;
-}
-
 CLobbyBrowserList::item:hover,
 CLobbyBrowserList::branch:selected,
 CLobbyBrowserList::item:selected {
@@ -263,38 +240,8 @@ CLobbyBrowserList::item:selected {
 	color: white;
 }
 
-CLobbyBrowserList {
-	qproperty-OnlineColor: black;
-	qproperty-OfflineColor: rgb(150, 150, 150);
-
-	qproperty-ModeratorColor: #ea0000;
-
-	qproperty-PremiumColor: #f3a600;
-	qproperty-ModeratorFontWeight: normal;
-	qproperty-PremiumFontWeight: normal;
-
-	qproperty-ParentWeight: 504;
-	font-size: 13px;
-
-	color: black;
-	font-size: 13px;
-	background-image: url(none);
-	border-radius: 0px;
-	border: none;
-}
-
-CLobbyBrowser {
-	background: rgb(240, 240, 240);
-	color: black;
-}
-
-CLobbyBrowser QLabel {
-	border: 0px solid black;
-	color: black;
-}
-
 /* No clue what these for */
-/* ------------------------------------ */
+/* ------------------------------------
 QDialog#Options QWidget#layoutWidget {
 	background-color: transparent;
 	background-image: url(none);
@@ -334,4 +281,55 @@ CMessenger #searchButton {
 	font-family: tahoma;
 	font-size: 13px;
 }
-/* ------------------------------------ */
+CMessenger CUserList::item:hover {
+	background: #e9b423;
+}
+
+CMessenger CUserList::branch:selected {
+	background: #c0941a;
+}
+
+CMessenger CUserList::item:selected {
+	color: darkred;
+	background: #ecc865;
+}
+
+CUserList {
+	qproperty-OnlineColor: black;
+	qproperty-OnlineFontStyle: bold;
+	qproperty-OfflineColor: rgba(0, 0, 0, 0.5);
+	qproperty-ModeratorColor: #b60000;
+	qproperty-PremiumColor: #be8200;
+	qproperty-ModeratorFontWeight: normal;
+	qproperty-PremiumFontWeight: normal;
+}
+CLobbyBrowserList {
+	qproperty-OnlineColor: black;
+	qproperty-OfflineColor: rgb(150, 150, 150);
+
+	qproperty-ModeratorColor: #ea0000;
+
+	qproperty-PremiumColor: #f3a600;
+	qproperty-ModeratorFontWeight: normal;
+	qproperty-PremiumFontWeight: normal;
+
+	qproperty-ParentWeight: 504;
+	font-size: 13px;
+
+	color: black;
+	font-size: 13px;
+	background-image: url(none);
+	border-radius: 0px;
+	border: none;
+}
+
+CLobbyBrowser {
+	background: rgb(240, 240, 240);
+	color: black;
+}
+
+CLobbyBrowser QLabel {
+	border: 0px solid black;
+	color: black;
+}
+------------------------------------ */
