@@ -5,6 +5,7 @@
 ## CSS Structure
 
 **splash.css:**
+
 QWidget
 CSplash QLabel
 CSplash #header
@@ -22,6 +23,7 @@ CSplash QLineEdit:focus
 CSplash #registerGroup
 
 **messenger.css:**
+
 CMessenger
 CMessenger #status2Center
 CMessenger #headerGroup
