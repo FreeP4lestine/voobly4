@@ -5,6 +5,7 @@
 ## CSS Structure
 splash.css:
 |___Properties:
+
     |___QWidget
     |___CSplash QLabel
     |___CSplash #header
