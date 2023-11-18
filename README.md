@@ -4,8 +4,8 @@
 
 ## CSS Structure
 splash.css:
-|___Properties:
 
+|___Properties:
     |___QWidget
     |___CSplash QLabel
     |___CSplash #header
@@ -25,6 +25,7 @@ splash.css:
     |___None
 
 messenger.css:
+
 |___Properties:
     |___CMessenger
     |___CMessenger #status2Center
