@@ -1,137 +1,87 @@
-/* Set a list of fonts */
-QLabel,
-QDialog,
-QTreeWidget,
-CMessenger,
-CChatDialog,
-QWidget {
-	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
-}
-/* ------------------------------------------------------- */
-
-/* Log-in window sizing */
 CMessenger {
 	min-height: 500px;
 	min-width: 300px;
 	max-width: 300px;
 	max-height: 500px;
 }
-/*--------------------- */
-
-/* Client loggging text */
-CMessenger CSplash #status2Center {
+CMessenger #status2Center {
 	font-family: Arial;
 	font-size: 12px;
 	padding: 6px;
 	padding-bottom: 12px;
 }
-/* ----------------------------- */
-
-/* After login client header */
 CMessenger #headerGroup {
-	background-color: #c7ba96;
+	background: #c7ba96;
 	max-height: 70px;
-	border: none;
 }
-/* -------------------------- */
-
-/* Textbox in client header after login */
 CMessenger #statusGroup {
-	background-color: #c7ba96;
+	background: #c7ba96;
 	min-width: 235px;
-	border: none;
 	qproperty-alignment: AlignCenter;
 }
-/* ------------------------------- */
-
-/* Client thumbnail */
 CMessenger #headerImage {
 	padding: 8px;
 	border: none;
 	width: 50px;
 	height: 50px;
 }
-/* ------------------- */
-
-/* User name in the client */
 CMessenger #headerName {
 	font-size: 14px;
 	color: rgb(77, 0, 0);
 	font-family: Tahoma;
 	font-weight: bold;
-	qproperty-alignment: AlignCenter;
 }
 CMessenger #headerName:hover {
 	color: darkred;
 }
-/* ------------------------------- */
-
-/* 'My Status' text */
 CMessenger #myStatus {
 	font-size: 10px;
 	font-weight: bold;
-	qproperty-alignment: AlignCenter;
 }
-/* ------------------------------- */
-
-/* Privat chat window */
+CMessenger #userList {
+	font-size: 12px;
+	font-weight: bold;
+	background: #EADBB2;
+	background-image: url(%theme%/voobly.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
 CChatDialog {
 	background-image: url(%theme%/voobly.png);
 	background-color: #EADBB2;
 	background-repeat: no-repeat;
 	background-position: center;
 }
-/* ---------------------------------------- */
-
-/* Privat chat history background */
-CChatDialog QWidget#layoutWidget {
+CChatDialog #layoutWidget {
 	border: none;
 	border: 1px solid black;
 	background: transparent;
 }
-/* ---------------------------- */
- 
-/* Privat chat history text */
 CChatDialog CChatText {
 	border: none;
 	min-height: 250px;
 	min-width: 500px;
 	background: rgba(255, 255, 255, 0.4);
 }
-/* ---------------------- */
-
-/* Privat chat horizontal spliter */
 CChatDialog QSplitter::handle {
 	background: #6F4F2E;
 	max-height: 2px;
 	margin-top: 3px;
 	margin-bottom: 3px;
 }
-/* ------------------------------- */
-
-/* Privat chat options */
 CChatDialog #OptionGroupBox {
 	background-color: #d4c69f;
 	border: none;
 }
-/* -------------------------- */
-
-/* Privat chat input group box */
 CChatDialog #EditGroupBox {
 	background-color: #e5d6ad;
 }
-/* -------------------------- */
-
-/* Privat chat input box */
 CChatDialog QPlainTextEdit {
 	max-height: 35px;
 	font-size: 12px;
 	border: none;
 	border-bottom: 2px solid #6F4F2E;
 }
-/* --------------------------------- */
-
-/* Privat chat send button */
 CChatDialog #send {
 	min-width: 80px;
 	max-width: 80px;
@@ -154,16 +104,10 @@ CChatDialog #send:disabled {
 	color: black;
 	background-image: url(%theme%/disabled_send.png);
 }
-/* --------------------------------- */
-
-/* Privat chat status icon */
 CChatDialog #headerImage {
 	background: white;
 	margin: 10px 0px 0px 10px;
 }
-/* ------------------------ */
-
-/* Privat chat reciever text */
 CChatDialog #headerName {
 	background: transparent;
 	margin: 8px 0px 0px 3px;
@@ -174,25 +118,13 @@ CChatDialog #headerName {
 CChatDialog #headerName:hover {
 	color: #630000;
 }
-/* ------------------------- */
-
-/* Privat chat option buttons */
-#OptionGroupBox QPushButton {
+CChatDialog #OptionGroupBox QPushButton {
 	padding: 2px;
 	margin-right: 2px;
 	height: 25px;
 	border: 0px;
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: #0000000d;
 }
-#OptionGroupBox QPushButton:hover {
-	background-color: rgba(0, 0, 0, 0.1);
-}
-#OptionGroupBox QPushButton:pressed {
-	background-color: rgba(0, 0, 0, 0.15);
-}
-/* -------------------------------------- */
-
-/* Privat chat font button */
 CChatDialog #pushFont {
 	width: 36px;
 	background-image: url(%theme%/buttons/chatfont.png);
@@ -200,9 +132,6 @@ CChatDialog #pushFont {
 CChatDialog #pushFont:hover {
 	background-image: url(%theme%/buttons/chatfont_hover.png);
 }
-/* -------------------------------------------------------- */
-
-/* Privat chat nudge button */
 CChatDialog #pushNudge {
 	width: 36px;
 	background-image: url(%theme%/buttons/chatnudge.png);
@@ -210,9 +139,6 @@ CChatDialog #pushNudge {
 CChatDialog #pushNudge:hover {
 	background-image: url(%theme%/buttons/chatnudge_hover.png);
 }
-/* --------------------------------------------------------- */
-
-/* Privat chat nudge button */
 CChatDialog #pushEmoticons {
 	width: 36px;
 	background-image: url(%theme%/buttons/smile.png);
@@ -220,28 +146,28 @@ CChatDialog #pushEmoticons {
 CChatDialog #pushEmoticons:hover {
 	background-image: url(%theme%/buttons/smile_hover.png);
 }
-/* ----------------------------------------------------- */
-
-/* User list in the messenger */
-CMessenger #userList {
-	font-size: 12px;
-	font-weight: bold;
+CLobbyBrowserList {
+	color: #000000;
 	background: #EADBB2;
 	background-image: url(%theme%/voobly.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
-/* ---------------------------------------- */
-
-CLobbyBrowserList::item:hover,
-CLobbyBrowserList::branch:selected,
+CLobbyBrowserList::item {
+	min-height: 25px;
+}
+CLobbyBrowserList::branch {
+	background: #EADBB2;
+}
 CLobbyBrowserList::item:selected {
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 rgb(100, 100, 100), stop: 1 rgb(110, 110, 110));
-	color: white;
+	color: #000000;
+	border-top: 2px solid #B88851;
+	border-right: 2px solid #B88851;
+	border-left: 1px solid #895932;
+	border-bottom: 1px solid #895932;
 }
 
-/* No clue what these for */
-/* ------------------------------------
+/*
 QDialog#Options QWidget#layoutWidget {
 	background-color: transparent;
 	background-image: url(none);
@@ -332,4 +258,4 @@ CLobbyBrowser QLabel {
 	border: 0px solid black;
 	color: black;
 }
------------------------------------- */
+*/

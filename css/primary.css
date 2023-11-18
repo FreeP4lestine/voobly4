@@ -6,6 +6,7 @@ QWidget {
 }
 
 QLabel {
+	border: none;
 	background-color: #EADBB2;
 }
 

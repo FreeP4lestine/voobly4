@@ -81,7 +81,7 @@ CLobby QHeaderView::section {
 	margin-left: 3px;
 }
 
-COptions COptions QTreeView {
+COptions QTreeView {
 	color: #000000;
 	background-color: #D7C8A1;
 	border: none;

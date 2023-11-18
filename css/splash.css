@@ -1,24 +1,35 @@
-/* Splash Screen */
-
-CSplash {
-	background-image: url(%theme%/voobly.png);
-	background-color: #EADBB2;
-	background-repeat: no-repeat;
-	background-position: center;
+QWidget {
+	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
 }
-
 CSplash QLabel {
 	font-weight: bold;
 	qproperty-alignment: AlignCenter;
 }
-
-QPushButton {
-	padding-top: 3px;
-	padding-bottom: 3px;
-	padding-left: 10px;
-	padding-right: 10px;
-	width: 100px;
-	height: 20px;
+CSplash #header {
+	min-height: 70px;
+	background-color: #D7C8A1;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 20px;
+	qproperty-alignment: AlignCenter;
+}
+CSplash #footer {
+	background-color: #D7C8A1;
+	font-weight: bold;
+	font-size: 9px;
+	min-height: 30;
+}
+CSplash #saveGroup {
+	margin-top: 10px;
+	border: none;
+}
+CSplash QPushButton {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 200px;
+	height: 25px;
 	background: #B88851;
 	font-family: Tahoma;
 	font-size: 12px;
@@ -28,167 +39,134 @@ QPushButton {
 	border-bottom: 2px solid #6F4F2E;
 	font-weight: bold;
 }
-
-QPushButton:hover {
-	color: white;
+CSplash QPushButton:hover {
+	border: 1px solid black;
 }
-
-QPushButton:pressed {
+CSplash QPushButton:pressed {
 	border-left: 2px solid #E4B479;
 	border-bottom: 2px solid #E4B479;
 	border-top: 2px solid #6F4F2E;
 	border-right: 2px solid #6F4F2E;
 }
-
-QPushButton:disabled {
+CSplash QPushButton:disabled {
 	background-color: #888888;
 	border: 1px solid black;
 	border-image: none;
 }
-
-CSplash #header {
-	min-height: 40px;
-	background-color: #D7C8A1;
-	font-family: Tahoma;
+CSplash #usernameGroup {
+	border: none;
+}
+CSplash #usernameGroup QLabel {
+	padding: 3px 3px 3px 3px;
 	font-weight: bold;
-	font-size: 20px;
+}
+CSplash QLineEdit {
+	color: #ffffff;
+	background: #6F4F2E;
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid #B88851;
+	border-top: 2px solid #895932;
+	margin-bottom: 10px;
+	width: 250px;
+	height: 25px;
 	qproperty-alignment: AlignCenter;
 }
+CSplash QLineEdit:hover {
+	border: 1px solid #ffffff;
+}
+CSplash QLineEdit:focus {
+	background: #000000;
+}
+CSplash #registerGroup {
+	border: none;
+	min-width: 220px;
+	min-height: 50px;
+	qproperty-alignment: AlignCenter;
+}
+CSplash QCheckBox {
+	margin-top: 5px;
+}
 
+/*
 CSplash #status1 {
 	font-size: 14px;
 	padding: 6px;
-	/*border: 1px solid black;*/
 }
-
 CSplash #status2 {
 	font-size: 14px;
 	padding: 6px;
 }
-
 CSplash #animation1 {
 	max-width: 32px;
 	max-height: 32px;
 	margin-left: 40px;
 	margin-right: 40px;
-
 }
-
 CSplash #pushReconnect {
 	margin-top: 3px;
 	margin-right: 2px;
 	padding: 3px;
 }
-
 CSplash #pushCancel2 {
 	margin-top: 3px;
 	margin-left: 2px;
 	padding: 3px;
 }
-
 CSplash #pushCancel {
 	margin-top: 4px;
 	padding: 3px;
 }
-
 CSplash #animation2 {
 	max-height: 32px;
 	margin-bottom: 5px;
 }
-
-CSplash #footer {
-	background-color: #D7C8A1;
-	font-weight: bold;
-	font-size: 9px;
-	min-height: 30;
-}
-
-CSplash #usernameGroup {
-	border: none;
-}
-
 CSplash #saveGroup {
 	margin-top: 10px;
 	border: none;
 	font-size: 11px;
 }
-
 CSplash #autologin {
 	margin-top: 4px;
 }
-
 CSplash #pushSignIn {
 	margin-top: 10px;
 }
-
 CSplash #registerGroup {
 	border: none;
 	min-width: 220px;
 	min-height: 50px;
 }
-
 #registerGroup QLabel {
 	qproperty-alignment: AlignCenter;
 }
-
 CSplash QCheckBox {
 	color: black;
 	font-size: 10px;
 	font-weight: bold;
 }
-
-CSplash QLineEdit {
-	color: #44301d;
-	font-size: 14px;
-	font-weight: bold;
-	border: none;
-	border-bottom: 2px solid #6F4F2E;
-	margin-bottom: 10px;
-	qproperty-alignment: AlignCenter;
-	width: 250px;
-	height: 25px;
-}
-
-CSplash QLineEdit:hover {
-	background-color: aliceblue;
-}
-
-CSplash QLineEdit:focus {
-	border: 1px solid #6F4F2E;
-}
-
-CSplash #usernameGroup QLabel {
-	padding: 3px 3px 3px 3px;
-	font-weight: bold;
-}
-
 QCheckBox::indicator {
 	width: 20px;
 	height: 20px;
 }
-
 QCheckBox::indicator:unchecked {
 	image: url(%theme%/buttons/normal_cb.png);
 	border-image: url(%theme%/buttons/normal_cb_border.png);
 }
-
 QCheckBox::indicator:unchecked:hover {
 	border-image: url(%theme%/buttons/normal_cb_border_hover.png);
 }
-
 QCheckBox::indicator:unchecked:pressed {
 	border-image: url(%theme%/buttons/clicked_border.png);
 }
-
 QCheckBox::indicator:checked {
 	image: url(%theme%/buttons/normal_cb_check.png);
 	border-image: url(%theme%/buttons/normal_cb_border.png);
 }
-
 QCheckBox::indicator:checked:hover {
 	border-image: url(%theme%/buttons/normal_cb_border_hover.png);
 }
-
 QCheckBox::indicator:checked:pressed {
 	border-image: url(%theme%/buttons/clicked_border.png);
-}
+} 
+*/
