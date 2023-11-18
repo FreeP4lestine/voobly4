@@ -4,61 +4,61 @@
 
 ## CSS Structure
 splash.css:
-    Properties:
-        QWidget
-        CSplash QLabel
-        CSplash #header
-        CSplash #footer
-        CSplash #saveGroup
-        CSplash QPushButton
-        CSplash QPushButton:hover
-        CSplash QPushButton:pressed
-        CSplash QPushButton:disabled
-        CSplash #usernameGroup
-        CSplash #usernameGroup QLabel
-        CSplash QLineEdit
-        CSplash QLineEdit:hover
-        CSplash QLineEdit:focus
-        CSplash #registerGroup
+|___Properties:
+    |___QWidget
+    |___CSplash QLabel
+    |___CSplash #header
+    |___CSplash #footer
+    |___CSplash #saveGroup
+    |___CSplash QPushButton
+    |___CSplash QPushButton:hover
+    |___CSplash QPushButton:pressed
+    |___CSplash QPushButton:disabled
+    |___CSplash #usernameGroup
+    |___CSplash #usernameGroup QLabel
+    |___CSplash QLineEdit
+    |___CSplash QLineEdit:hover
+    |___CSplash QLineEdit:focus
+    |___CSplash #registerGroup
     Used Images:
-        None
+    |___None
 
 messenger.css:
-    Properties:
-        CMessenger
-        CMessenger #status2Center
-        CMessenger #headerGroup
-        CMessenger #statusGroup
-        CMessenger #headerImage
-        CMessenger #headerName
-        CMessenger #headerName:hover
-        CMessenger #myStatus
-        CMessenger #userList
-        CChatDialog
-        CChatDialog #layoutWidget
-        CChatDialog CChatText
-        CChatDialog QSplitter::handle
-        CChatDialog #OptionGroupBox 
-        CChatDialog #EditGroupBox
-        CChatDialog QPlainTextEdit
-        CChatDialog #send
-        CChatDialog #send:hover
-        CChatDialog #send:pressed
-        CChatDialog #send:disabled
-        CChatDialog #headerImage
-        CChatDialog #headerName
-        CChatDialog #headerName:hover
-        CChatDialog #OptionGroupBox QPushButton
-        CChatDialog #OptionGroupBox QPushButton:hover
-        CChatDialog #OptionGroupBox QPushButton:pressed
-        CChatDialog #pushFont
-        CChatDialog #pushFont:hover
-        CChatDialog #pushNudge 
-        CChatDialog #pushNudge:hover
-        CChatDialog #pushEmoticons
-        CChatDialog #pushEmoticons:hover
-        CLobbyBrowserList
-        CLobbyBrowserList::item
-        CLobbyBrowserList::branch
-        CLobbyBrowserList::item:selected
+|___Properties:
+    |___CMessenger
+    |___CMessenger #status2Center
+    |___CMessenger #headerGroup
+    |___CMessenger #statusGroup
+    |___CMessenger #headerImage
+    |___CMessenger #headerName
+    |___CMessenger #headerName:hover
+    |___CMessenger #myStatus
+    |___CMessenger #userList
+    |___CChatDialog
+    |___CChatDialog #layoutWidget
+    |___CChatDialog CChatText
+    |___CChatDialog QSplitter::handle
+    |___CChatDialog #OptionGroupBox 
+    |___CChatDialog #EditGroupBox
+    |___CChatDialog QPlainTextEdit
+    |___CChatDialog #send
+    |___CChatDialog #send:hover
+    |___CChatDialog #send:pressed
+    |___CChatDialog #send:disabled
+    |___CChatDialog #headerImage
+    |___CChatDialog #headerName
+    |___CChatDialog #headerName:hover
+    |___CChatDialog #OptionGroupBox QPushButton
+    |___CChatDialog #OptionGroupBox QPushButton:hover
+    |___CChatDialog #OptionGroupBox QPushButton:pressed
+    |___CChatDialog #pushFont
+    |___CChatDialog #pushFont:hover
+    |___CChatDialog #pushNudge 
+    |___CChatDialog #pushNudge:hover
+    |___CChatDialog #pushEmoticons
+    |___CChatDialog #pushEmoticons:hover
+    |___CLobbyBrowserList
+    |___CLobbyBrowserList::item
+    |___CLobbyBrowserList::branch
+    |___CLobbyBrowserList::item:selected
         
