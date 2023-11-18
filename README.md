@@ -6,6 +6,7 @@
 splash.css:
 
 |___Properties:
+    
     |___QWidget
     |___CSplash QLabel
     |___CSplash #header
@@ -27,6 +28,7 @@ splash.css:
 messenger.css:
 
 |___Properties:
+    
     |___CMessenger
     |___CMessenger #status2Center
     |___CMessenger #headerGroup
