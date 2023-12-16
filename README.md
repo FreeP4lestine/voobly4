@@ -12,9 +12,6 @@
 * CSplash #footer
 * CSplash #saveGroup
 * CSplash QPushButton
-* CSplash QPushButton:hover
-* CSplash QPushButton:pressed
-* CSplash QPushButton:disabled
 * CSplash #usernameGroup
 * CSplash #usernameGroup QLabel
 * CSplash QLineEdit
@@ -24,7 +21,9 @@
 
 **messenger.css:**
 
+* QWidget
 * CMessenger
+* CMessenger QLabel
 * CMessenger #status2Center
 * CMessenger #headerGroup
 * CMessenger #statusGroup
@@ -60,3 +59,39 @@
 * CLobbyBrowserList::item
 * CLobbyBrowserList::branch
 * CLobbyBrowserList::item:selected
+
+**primary.css:**
+
+* QWidget
+* QLabel
+* QTreeView
+* QPushButton
+* QPushButton:hover
+* QPushButton:pressed
+* #Options
+* #Options QLabel
+* #Options QLineEdit
+* #Options QLineEdit:hover
+* #Options QLineEdit:focus
+* #Options QLineEdit:disabled
+* #Options QTextEdit
+* #Options QComboBox
+* #Options QComboBox QAbstractItemView
+* #Options QComboBox:hover
+* #Options QComboBox:selected
+* #Options QStackedWidget#stackedWidget
+* #Options QGroupBox
+* #Options QGroupBox#groupBox_6, #Options QGroupBox#groupBox_7, #Options QGroupBox#groupBox_8, #Options QGroupBox#groupBox_9, #Options QGroupBox#groupBox_10, #Options QGroupBox#groupBox_11, #Options QGroupBox#groupBox_12, #Options QGroupBox#groupBox_17, #Options QGroupBox#groupBox_19, #Options QGroupBox#groupBox_20
+* #fontColor
+* #fontColor:hover
+* #fontColor:pressed
+* QColorDialog
+* QColorDialog QLabel
+* QColorDialog QPushButton
+* QListWidget
+* QListWidget::item
+* QListWidget::item:hover
+* QListWidget::item:selected
+* QMenuBar
+* QMenuBar::item
+* QMenuBar::item:selected

@@ -1,8 +1,14 @@
+QWidget {
+	font-family: Tahoma, Microsoft Sans Serif, Arial, Verdana;
+}
 CMessenger {
 	min-height: 500px;
 	min-width: 300px;
 	max-width: 300px;
 	max-height: 500px;
+}
+CMessenger QLabel {
+	background-color: transparent;
 }
 CMessenger #status2Center {
 	font-family: Arial;
@@ -45,6 +51,15 @@ CMessenger #userList {
 	background-image: url(%theme%/voobly.png);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+CUserList {
+	qproperty-OnlineColor: black;
+	qproperty-OnlineFontStyle: bold;
+	qproperty-OfflineColor: rgba(0, 0, 0, 0.5);
+	qproperty-ModeratorColor: #b60000;
+	qproperty-PremiumColor: #ffff00;
+	qproperty-ModeratorFontWeight: bold;
+	qproperty-PremiumFontWeight: bold;
 }
 CChatDialog {
 	background-image: url(%theme%/voobly.png);
@@ -126,21 +141,24 @@ CChatDialog #OptionGroupBox QPushButton {
 	background-color: #0000000d;
 }
 CChatDialog #pushFont {
-	width: 36px;
+	max-width: 30px;
+	min-width: 30px;
 	background-image: url(%theme%/buttons/chatfont.png);
 }
 CChatDialog #pushFont:hover {
 	background-image: url(%theme%/buttons/chatfont_hover.png);
 }
 CChatDialog #pushNudge {
-	width: 36px;
+	max-width: 30px;
+	min-width: 30px;
 	background-image: url(%theme%/buttons/chatnudge.png);
 }
 CChatDialog #pushNudge:hover {
 	background-image: url(%theme%/buttons/chatnudge_hover.png);
 }
 CChatDialog #pushEmoticons {
-	width: 36px;
+	max-width: 30px;
+	min-width: 30px;
 	background-image: url(%theme%/buttons/smile.png);
 }
 CChatDialog #pushEmoticons:hover {
@@ -161,10 +179,12 @@ CLobbyBrowserList::branch {
 }
 CLobbyBrowserList::item:selected {
 	color: #000000;
-	border-top: 2px solid #B88851;
-	border-right: 2px solid #B88851;
-	border-left: 1px solid #895932;
-	border-bottom: 1px solid #895932;
+	border: none;
+	border-left: 4px solid #B88851;
+}
+
+CLobbyBrowserList::item:pressed {
+	color: #FF0000;
 }
 
 /*
